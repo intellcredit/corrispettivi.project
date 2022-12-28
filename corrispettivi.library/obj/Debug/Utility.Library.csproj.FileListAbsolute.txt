@@ -1,0 +1,13 @@
+C:\DEV.NET2019\Utility.Project\Developer\Utility.Library\bin\Debug\Utility.Library.dll.config
+C:\DEV.NET2019\Utility.Project\Developer\Utility.Library\bin\Debug\Utility.Library.dll
+C:\DEV.NET2019\Utility.Project\Developer\Utility.Library\bin\Debug\Utility.Library.pdb
+C:\DEV.NET2019\Utility.Project\Developer\Utility.Library\bin\Debug\Authorize.Based.dll
+C:\DEV.NET2019\Utility.Project\Developer\Utility.Library\bin\Debug\it.tools.library.dll
+C:\DEV.NET2019\Utility.Project\Developer\Utility.Library\bin\Debug\Newtonsoft.Json.dll
+C:\DEV.NET2019\Utility.Project\Developer\Utility.Library\bin\Debug\System.Web.Http.dll
+C:\DEV.NET2019\Utility.Project\Developer\Utility.Library\bin\Debug\Newtonsoft.Json.xml
+C:\DEV.NET2019\Utility.Project\Developer\Utility.Library\obj\Debug\Utility.Library.csproj.CoreCompileInputs.cache
+C:\DEV.NET2019\Utility.Project\Developer\Utility.Library\obj\Debug\Utility.Library.csproj.CopyComplete
+C:\DEV.NET2019\Utility.Project\Developer\Utility.Library\obj\Debug\Utility.Library.dll
+C:\DEV.NET2019\Utility.Project\Developer\Utility.Library\obj\Debug\Utility.Library.pdb
+C:\DEV.NET2019\Utility.Project\Developer\Utility.Library\obj\Debug\Utility.Library.csprojAssemblyReference.cache

@@ -1,0 +1,17 @@
+C:\DEV.NET2019\Corrispettivi.Project\DEVELOPER\corrispettivi.library\bin\Debug\Corrispettivi.Library.dll.config
+C:\DEV.NET2019\Corrispettivi.Project\DEVELOPER\corrispettivi.library\bin\Debug\Corrispettivi.Library.dll
+C:\DEV.NET2019\Corrispettivi.Project\DEVELOPER\corrispettivi.library\bin\Debug\Corrispettivi.Library.pdb
+C:\DEV.NET2019\Corrispettivi.Project\DEVELOPER\corrispettivi.library\bin\Debug\Authorize.Based.dll
+C:\DEV.NET2019\Corrispettivi.Project\DEVELOPER\corrispettivi.library\bin\Debug\it.tools.library.dll
+C:\DEV.NET2019\Corrispettivi.Project\DEVELOPER\corrispettivi.library\bin\Debug\Newtonsoft.Json.dll
+C:\DEV.NET2019\Corrispettivi.Project\DEVELOPER\corrispettivi.library\bin\Debug\Utility.Library.dll
+C:\DEV.NET2019\Corrispettivi.Project\DEVELOPER\corrispettivi.library\bin\Debug\Authorize.Based.pdb
+C:\DEV.NET2019\Corrispettivi.Project\DEVELOPER\corrispettivi.library\bin\Debug\Authorize.Based.dll.config
+C:\DEV.NET2019\Corrispettivi.Project\DEVELOPER\corrispettivi.library\bin\Debug\Utility.Library.pdb
+C:\DEV.NET2019\Corrispettivi.Project\DEVELOPER\corrispettivi.library\bin\Debug\Utility.Library.dll.config
+C:\DEV.NET2019\Corrispettivi.Project\DEVELOPER\corrispettivi.library\bin\Debug\Newtonsoft.Json.xml
+C:\DEV.NET2019\Corrispettivi.Project\DEVELOPER\corrispettivi.library\obj\Debug\Corrispettivi.LIbrary.csprojAssemblyReference.cache
+C:\DEV.NET2019\Corrispettivi.Project\DEVELOPER\corrispettivi.library\obj\Debug\Corrispettivi.LIbrary.csproj.CoreCompileInputs.cache
+C:\DEV.NET2019\Corrispettivi.Project\DEVELOPER\corrispettivi.library\obj\Debug\Corrispettivi.LIbrary.csproj.CopyComplete
+C:\DEV.NET2019\Corrispettivi.Project\DEVELOPER\corrispettivi.library\obj\Debug\Corrispettivi.Library.dll
+C:\DEV.NET2019\Corrispettivi.Project\DEVELOPER\corrispettivi.library\obj\Debug\Corrispettivi.Library.pdb

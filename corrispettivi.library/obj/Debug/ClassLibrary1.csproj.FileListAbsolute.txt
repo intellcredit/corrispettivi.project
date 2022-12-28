@@ -1,0 +1,9 @@
+C:\DEV.NET2019\Authorize.Project\Developer\ClassLibrary1\obj\Debug\ClassLibrary1.csprojAssemblyReference.cache
+C:\DEV.NET2019\Authorize.Project\Developer\ClassLibrary1\obj\Debug\ClassLibrary1.csproj.CoreCompileInputs.cache
+C:\DEV.NET2019\Authorize.Project\Developer\ClassLibrary1\bin\Debug\ClassLibrary1.dll
+C:\DEV.NET2019\Authorize.Project\Developer\ClassLibrary1\bin\Debug\ClassLibrary1.pdb
+C:\DEV.NET2019\Authorize.Project\Developer\ClassLibrary1\bin\Debug\Newtonsoft.Json.dll
+C:\DEV.NET2019\Authorize.Project\Developer\ClassLibrary1\bin\Debug\Newtonsoft.Json.xml
+C:\DEV.NET2019\Authorize.Project\Developer\ClassLibrary1\obj\Debug\ClassLibrary1.csproj.CopyComplete
+C:\DEV.NET2019\Authorize.Project\Developer\ClassLibrary1\obj\Debug\ClassLibrary1.dll
+C:\DEV.NET2019\Authorize.Project\Developer\ClassLibrary1\obj\Debug\ClassLibrary1.pdb

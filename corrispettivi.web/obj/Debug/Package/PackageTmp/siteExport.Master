@@ -1,0 +1,17 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="siteExport.master.cs" Inherits="corrispettivi.web.siteExport" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head2" runat="server">
+    <title>CCA</title>
+    <asp:ContentPlaceHolder ID="exportHead" runat="server" />
+</head>
+<body onprerender="javascript:document.write('FILE IN ELABORAZIONE')" onunload="javascript:window.close();" bgcolor="whitesmoke">
+    <form id="form2" runat="server">
+    <asp:ScriptManager ID="ScriptManager1" runat="server" />
+    <div>
+        <font class="titnero10">FILE IN ELABORAZIONE</font>
+        <asp:ContentPlaceHolder ID="exportMain" runat="server"/>
+    </div>
+    </form>
+</body>
+</html>

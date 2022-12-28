@@ -1,0 +1,87 @@
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/admin/local.master" AutoEventWireup="true" CodeBehind="repccxperiodo.aspx.cs" Inherits="corrispettivi.web.admin.repccxperiodo" %>
+<%@ Register assembly="Telerik.Web.UI" namespace="Telerik.Web.UI" tagprefix="telerik" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="cphHeader" Runat="Server">
+    <h1><b>REPORT CALL CENTER PER PERIODO.</b></h1><hr />
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="cphMain" Runat="Server">
+    <table border="0" cellpadding="0" cellspacing="0" bgcolor="#cccccc" width="100%">
+        <tr bgcolor="white"><td><asp:Label ID="lblAction" runat="server" Text="" /></td></tr>
+    </table>
+
+    <telerik:RadAjaxManager ID="amInfo" runat="server">
+        <AjaxSettings>
+            <telerik:AjaxSetting AjaxControlID="cmbPeriodoRif">
+                <UpdatedControls>
+                    <telerik:AjaxUpdatedControl ControlID="gvInfo" LoadingPanelID="apStatus" />
+                    <telerik:AjaxUpdatedControl ControlID="tbAction" LoadingPanelID="apStatus" />
+                </UpdatedControls>
+            </telerik:AjaxSetting>
+
+            <telerik:AjaxSetting AjaxControlID="gvInfo">
+                <UpdatedControls>
+                    <telerik:AjaxUpdatedControl ControlID="gvInfo" LoadingPanelID="apStatus" />
+                </UpdatedControls>
+            </telerik:AjaxSetting>
+
+            <telerik:AjaxSetting AjaxControlID="imgSearch">
+                <UpdatedControls>
+                    <telerik:AjaxUpdatedControl ControlID="gvInfo" LoadingPanelID="apStatus" />
+                    <telerik:AjaxUpdatedControl ControlID="tbAction" LoadingPanelID="apStatus" />
+                </UpdatedControls>
+            </telerik:AjaxSetting>
+        </AjaxSettings>
+    </telerik:RadAjaxManager>
+    <telerik:RadAjaxLoadingPanel ID="apStatus" runat="server" Style="width: 320px;" Height="75px" Width="75px" AnimationDuration="1">
+        <img alt="Loading..." src="~/image/Telerik/loading7.gif" style="border:0;" />
+    </telerik:RadAjaxLoadingPanel>
+
+    <table border="0" cellpadding="2" cellspacing="2">
+        <tr valign="middle">
+            <td class="titnero12" nowrap>Selezionare il periodo di riferimento:</td>
+            <td><telerik:RadComboBox ID="cmbPeriodoRif" runat="server" Width="200px" EmptyMessage="Selezionare un valore..."
+                    DataSourceID="sdsPeriodoRif" DataTextField="PeriodoRif" 
+                    DataValueField="PeriodoRif" AutoPostBack="true" 
+                    onselectedindexchanged="cmbPeriodoRif_SelectedIndexChanged" /></td>
+            <td><asp:ImageButton ID="imgSearch" runat="server" ImageUrl="~/Image/Find.png" onclick="imgSearch_Click" /></td>
+            <td width="100%" align="right"><telerik:radtoolbar ID="tbAction" runat="server" Skin="Simple">
+                    <Items>
+                        <telerik:RadToolBarDropDown Text="Esporta" Font-Bold="True" ImageUrl="~/image/Download-20.png"> 
+                            <Buttons>
+                                <telerik:RadToolBarButton Text="Csv" ImageUrl="~/image/csv.png" CommandName="expCsv" Value="exprepccxperiodo.aspx?mode=csv&x={0}" />
+                                <telerik:RadToolBarButton Text="Excel" ImageUrl="~/image/excel.gif" CommandName="expExcel" Value="exprepccxperiodo.aspx?mode=xls&x={0}" />
+                            </Buttons>
+                        </telerik:RadToolBarDropDown>
+                    </Items>
+                </telerik:radtoolbar></td>
+        </tr>
+    </table>
+    <telerik:RadGrid ID="gvInfo" runat="server" Skin="Simple" AllowPaging="false" AllowSorting="True" AllowFilteringByColumn="true" CellSpacing="0" GridLines="None" PageSize="100" DataSourceID="sdsInfo" Height="550px" ShowFooter="true">
+        <SelectedItemStyle CssClass="SelectedStyle" />
+        <ClientSettings EnableRowHoverStyle="true" Selecting-AllowRowSelect="true" Scrolling-UseStaticHeaders="True" Scrolling-AllowScroll="True" />
+        <HeaderStyle Font-Bold="true" VerticalAlign="Top" />
+        <ItemStyle VerticalAlign="Top" />
+        <AlternatingItemStyle VerticalAlign="Top" />
+        <FooterStyle CssClass="titrosso10" Font-Bold="true" Width="100%" />
+        <MasterTableView AutoGenerateColumns="false" TableLayout="Fixed" DataKeyNames="CallCenterID">
+            <Columns>
+                <telerik:GridBoundColumn DataField="CallCenterNome" HeaderText="CallCenter" HeaderStyle-Width="180px" HeaderStyle-HorizontalAlign="Center" Aggregate="Count" FooterStyle-HorizontalAlign="Center" AllowFiltering="false" />
+                <telerik:GridBoundColumn DataField="AgentiBc"  HeaderText="Bonus contatti" HeaderStyle-Width="100px" HeaderStyle-HorizontalAlign="Center" ItemStyle-HorizontalAlign="Right" DataFormatString="{0:C}" Aggregate="Sum" FooterStyle-HorizontalAlign="Right" AllowFiltering="false" />
+                <telerik:GridBoundColumn DataField="AgentiCorrispettivi"  HeaderText="Corrispettivi" HeaderStyle-Width="100px" HeaderStyle-HorizontalAlign="Center" ItemStyle-HorizontalAlign="Right" DataFormatString="{0:C}" Aggregate="Sum" FooterStyle-HorizontalAlign="Right" AllowFiltering="false" />
+                <telerik:GridBoundColumn DataField="AgentiPremi"  HeaderText="Premi" HeaderStyle-Width="100px" HeaderStyle-HorizontalAlign="Center" ItemStyle-HorizontalAlign="Right" DataFormatString="{0:C}" Aggregate="Sum" FooterStyle-HorizontalAlign="Right" AllowFiltering="false" />
+                <telerik:GridBoundColumn DataField="AgentiIntegrazioni"  HeaderText="Bonus provvigionali" HeaderStyle-Width="100px" HeaderStyle-HorizontalAlign="Center" ItemStyle-HorizontalAlign="Right" DataFormatString="{0:C}" Aggregate="Sum" FooterStyle-HorizontalAlign="Right" AllowFiltering="false" />
+                <telerik:GridBoundColumn DataField="AgentiBsl"  HeaderText="Bonus salva lavoro" HeaderStyle-Width="100px" HeaderStyle-HorizontalAlign="Center" ItemStyle-HorizontalAlign="Right" DataFormatString="{0:C}" Aggregate="Sum" FooterStyle-HorizontalAlign="Right" AllowFiltering="false" />
+                <telerik:GridBoundColumn DataField="AgentiBe"  HeaderText="Bonus extra" HeaderStyle-Width="100px" HeaderStyle-HorizontalAlign="Center" ItemStyle-HorizontalAlign="Right" DataFormatString="{0:C}" Aggregate="Sum" FooterStyle-HorizontalAlign="Right" AllowFiltering="false" />
+                <telerik:GridBoundColumn DataField="Totale" HeaderText="Totale" HeaderStyle-Width="100px" HeaderStyle-HorizontalAlign="Center" ItemStyle-HorizontalAlign="Right" DataFormatString="{0:C}" Aggregate="Sum" FooterStyle-HorizontalAlign="Right" AllowFiltering="false" />
+            </Columns>
+        </MasterTableView>
+    </telerik:RadGrid>
+
+    <asp:SqlDataSource ID="sdsInfo" runat="server" ProviderName="System.Data.SqlClient" SelectCommand="pivotAdminxCallCenterxPeriodo" SelectCommandType="StoredProcedure" ConnectionString="<%$ ConnectionStrings:dbConn%>" >
+        <SelectParameters>
+            <asp:ControlParameter ControlID="cmbPeriodoRif" PropertyName="SelectedValue" Name="PeriodoRif" Type="String" DefaultValue="" />
+        </SelectParameters>
+    </asp:SqlDataSource>
+
+    <asp:SqlDataSource ID="sdsPeriodoRif" runat="server" ProviderName="System.Data.SqlClient" 
+        SelectCommandType="StoredProcedure" SelectCommand="sdsPeriodoRif" ConnectionString="<%$ ConnectionStrings:dbConn%>" />
+</asp:Content>

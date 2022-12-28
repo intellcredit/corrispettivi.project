@@ -1,0 +1,1007 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <_PublishTargetUrl>C:\DEV.NET2019\.WEB.PROJECT.PUBLISH\corrispettivi.web\Release</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="404API.html">
+      <publishTime>01/19/2022 15:48:41</publishTime>
+    </File>
+    <File Include="admin/exprepagexanno.aspx">
+      <publishTime>12/20/2022 11:04:49</publishTime>
+    </File>
+    <File Include="admin/exprepagexperiodo.aspx">
+      <publishTime>12/20/2022 11:07:59</publishTime>
+    </File>
+    <File Include="admin/exprepccxanno.aspx">
+      <publishTime>12/20/2022 11:09:08</publishTime>
+    </File>
+    <File Include="admin/exprepccxperiodo.aspx">
+      <publishTime>12/20/2022 11:09:36</publishTime>
+    </File>
+    <File Include="admin/home.aspx">
+      <publishTime>12/20/2022 11:12:09</publishTime>
+    </File>
+    <File Include="admin/local.master">
+      <publishTime>12/20/2022 11:10:59</publishTime>
+    </File>
+    <File Include="admin/repagexanno.aspx">
+      <publishTime>12/20/2022 11:13:01</publishTime>
+    </File>
+    <File Include="admin/repagexcontrollo.aspx">
+      <publishTime>12/20/2022 11:14:16</publishTime>
+    </File>
+    <File Include="admin/repagexperiodo.aspx">
+      <publishTime>12/20/2022 11:29:33</publishTime>
+    </File>
+    <File Include="admin/repccxanno.aspx">
+      <publishTime>12/20/2022 11:30:52</publishTime>
+    </File>
+    <File Include="admin/repccxperiodo.aspx">
+      <publishTime>12/20/2022 12:07:08</publishTime>
+    </File>
+    <File Include="agenti/default.aspx">
+      <publishTime>12/20/2022 12:10:44</publishTime>
+    </File>
+    <File Include="agenti/expreport-rip.aspx">
+      <publishTime>12/20/2022 12:12:09</publishTime>
+    </File>
+    <File Include="agenti/expsummary.aspx">
+      <publishTime>12/20/2022 12:13:30</publishTime>
+    </File>
+    <File Include="agenti/local.master">
+      <publishTime>12/20/2022 12:09:19</publishTime>
+    </File>
+    <File Include="agenti/report.aspx">
+      <publishTime>12/20/2022 12:15:12</publishTime>
+    </File>
+    <File Include="anomalie/alertContratti.ascx">
+      <publishTime>12/20/2022 09:52:24</publishTime>
+    </File>
+    <File Include="anomalie/alertCounter.ascx">
+      <publishTime>12/20/2022 09:52:24</publishTime>
+    </File>
+    <File Include="anomalie/expAlertAgenti.aspx">
+      <publishTime>12/20/2022 09:54:32</publishTime>
+    </File>
+    <File Include="anomalie/repAlertAgenti.aspx">
+      <publishTime>12/20/2022 09:56:34</publishTime>
+    </File>
+    <File Include="autologin.aspx">
+      <publishTime>12/28/2022 12:31:34</publishTime>
+    </File>
+    <File Include="azioni.aspx">
+      <publishTime>12/28/2022 12:38:25</publishTime>
+    </File>
+    <File Include="bin/Authorize.Based.dll">
+      <publishTime>12/16/2022 11:19:09</publishTime>
+    </File>
+    <File Include="bin/Authorize.Based.dll.config">
+      <publishTime>02/23/2022 18:09:04</publishTime>
+    </File>
+    <File Include="bin/Authorize.Based.pdb">
+      <publishTime>12/16/2022 11:19:09</publishTime>
+    </File>
+    <File Include="bin/ClosedXML.dll">
+      <publishTime>09/29/2013 09:10:38</publishTime>
+    </File>
+    <File Include="bin/Corrispettivi.Library.dll">
+      <publishTime>12/28/2022 12:41:07</publishTime>
+    </File>
+    <File Include="bin/Corrispettivi.Library.dll.config">
+      <publishTime>02/23/2022 18:08:13</publishTime>
+    </File>
+    <File Include="bin/Corrispettivi.Library.pdb">
+      <publishTime>12/28/2022 12:41:07</publishTime>
+    </File>
+    <File Include="bin/corrispettivi.web.dll">
+      <publishTime>12/28/2022 12:41:08</publishTime>
+    </File>
+    <File Include="bin/corrispettivi.web.pdb">
+      <publishTime>12/28/2022 12:41:08</publishTime>
+    </File>
+    <File Include="bin/DocumentFormat.OpenXml.dll">
+      <publishTime>02/22/2010 11:03:08</publishTime>
+    </File>
+    <File Include="bin/it.tools.library.dll">
+      <publishTime>02/18/2022 11:52:23</publishTime>
+    </File>
+    <File Include="bin/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll">
+      <publishTime>09/05/2018 16:10:50</publishTime>
+    </File>
+    <File Include="bin/Newtonsoft.Json.dll">
+      <publishTime>11/24/2022 02:10:26</publishTime>
+    </File>
+    <File Include="bin/roslyn/csc.exe">
+      <publishTime>06/27/2016 21:50:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/csc.exe.config">
+      <publishTime>06/27/2016 21:50:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/csc.rsp">
+      <publishTime>06/27/2016 21:50:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/csi.exe">
+      <publishTime>06/27/2016 21:50:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/csi.rsp">
+      <publishTime>06/27/2016 21:50:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.Build.Tasks.CodeAnalysis.dll">
+      <publishTime>06/27/2016 21:50:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.CSharp.dll">
+      <publishTime>06/27/2016 21:50:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.CSharp.Scripting.dll">
+      <publishTime>06/27/2016 21:50:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.dll">
+      <publishTime>06/27/2016 21:50:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.Scripting.dll">
+      <publishTime>06/27/2016 21:50:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.VisualBasic.dll">
+      <publishTime>06/27/2016 21:50:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CSharp.Core.targets">
+      <publishTime>06/27/2016 21:50:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.DiaSymReader.Native.amd64.dll">
+      <publishTime>06/27/2016 21:50:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.DiaSymReader.Native.x86.dll">
+      <publishTime>06/27/2016 21:50:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.VisualBasic.Core.targets">
+      <publishTime>06/27/2016 21:50:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.AppContext.dll">
+      <publishTime>06/27/2016 21:50:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Collections.Immutable.dll">
+      <publishTime>06/27/2016 21:50:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Diagnostics.StackTrace.dll">
+      <publishTime>06/27/2016 21:50:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.IO.FileSystem.dll">
+      <publishTime>06/27/2016 21:50:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.IO.FileSystem.Primitives.dll">
+      <publishTime>06/27/2016 21:50:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Reflection.Metadata.dll">
+      <publishTime>06/27/2016 21:50:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/vbc.exe">
+      <publishTime>06/27/2016 21:50:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/vbc.exe.config">
+      <publishTime>06/27/2016 21:50:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/vbc.rsp">
+      <publishTime>06/27/2016 21:50:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/VBCSCompiler.exe">
+      <publishTime>06/27/2016 21:50:24</publishTime>
+    </File>
+    <File Include="bin/roslyn/VBCSCompiler.exe.config">
+      <publishTime>06/27/2016 21:50:24</publishTime>
+    </File>
+    <File Include="bin/System.Web.Http.dll">
+      <publishTime>11/28/2018 13:01:00</publishTime>
+    </File>
+    <File Include="bin/Telerik.Web.UI.dll">
+      <publishTime>10/15/2012 08:34:38</publishTime>
+    </File>
+    <File Include="bin/Telerik.Web.UI.Skins.dll">
+      <publishTime>10/15/2012 08:34:38</publishTime>
+    </File>
+    <File Include="bin/Utility.Library.dll">
+      <publishTime>12/16/2022 11:19:09</publishTime>
+    </File>
+    <File Include="bin/Utility.Library.dll.config">
+      <publishTime>05/25/2022 17:00:52</publishTime>
+    </File>
+    <File Include="bin/Utility.Library.pdb">
+      <publishTime>12/16/2022 11:19:09</publishTime>
+    </File>
+    <File Include="blank.Master">
+      <publishTime>12/28/2022 12:30:36</publishTime>
+    </File>
+    <File Include="callcenter/expperiodo-summary.aspx">
+      <publishTime>12/20/2022 12:19:56</publishTime>
+    </File>
+    <File Include="callcenter/expperiodo-tabulati.aspx">
+      <publishTime>12/20/2022 12:20:51</publishTime>
+    </File>
+    <File Include="callcenter/expreport.aspx">
+      <publishTime>12/20/2022 12:24:37</publishTime>
+    </File>
+    <File Include="callcenter/expsummary.aspx">
+      <publishTime>12/20/2022 12:24:37</publishTime>
+    </File>
+    <File Include="callcenter/home.aspx">
+      <publishTime>12/20/2022 12:24:25</publishTime>
+    </File>
+    <File Include="callcenter/local.master">
+      <publishTime>12/20/2022 12:17:54</publishTime>
+    </File>
+    <File Include="callcenter/periodo.aspx">
+      <publishTime>12/20/2022 12:27:52</publishTime>
+    </File>
+    <File Include="callcenter/report.aspx">
+      <publishTime>12/20/2022 12:30:07</publishTime>
+    </File>
+    <File Include="callcenter/requestreport.aspx">
+      <publishTime>12/20/2022 12:29:46</publishTime>
+    </File>
+    <File Include="callcenter/summary.aspx">
+      <publishTime>12/20/2022 12:31:55</publishTime>
+    </File>
+    <File Include="commerciali/expreport-rip.aspx">
+      <publishTime>12/20/2022 12:36:55</publishTime>
+    </File>
+    <File Include="commerciali/local.master">
+      <publishTime>12/20/2022 12:33:46</publishTime>
+    </File>
+    <File Include="commerciali/report.aspx">
+      <publishTime>12/20/2022 12:36:04</publishTime>
+    </File>
+    <File Include="contabilita/agenti/expperiodo-summary-all.aspx">
+      <publishTime>12/20/2022 13:52:20</publishTime>
+    </File>
+    <File Include="contabilita/agenti/expperiodo-summary-single.aspx">
+      <publishTime>12/20/2022 13:53:42</publishTime>
+    </File>
+    <File Include="contabilita/agenti/expperiodo-tabulati-all.aspx">
+      <publishTime>12/20/2022 13:55:28</publishTime>
+    </File>
+    <File Include="contabilita/agenti/expperiodo.aspx">
+      <publishTime>12/20/2022 13:56:50</publishTime>
+    </File>
+    <File Include="contabilita/agenti/expreport.aspx">
+      <publishTime>12/20/2022 13:58:07</publishTime>
+    </File>
+    <File Include="contabilita/agenti/fatture/default.aspx">
+      <publishTime>12/20/2022 12:56:26</publishTime>
+    </File>
+    <File Include="contabilita/agenti/fatture/expdefault.aspx">
+      <publishTime>12/20/2022 12:57:39</publishTime>
+    </File>
+    <File Include="contabilita/agenti/fatture/expfatture.aspx">
+      <publishTime>12/20/2022 12:58:50</publishTime>
+    </File>
+    <File Include="contabilita/agenti/fatture/scheda.aspx">
+      <publishTime>12/20/2022 12:59:53</publishTime>
+    </File>
+    <File Include="contabilita/agenti/local.master">
+      <publishTime>12/20/2022 12:43:47</publishTime>
+    </File>
+    <File Include="contabilita/agenti/periodo.aspx">
+      <publishTime>12/20/2022 13:59:01</publishTime>
+    </File>
+    <File Include="contabilita/agenti/report.aspx">
+      <publishTime>12/20/2022 14:01:02</publishTime>
+    </File>
+    <File Include="contabilita/callcenter/expperiodo-summary-all.aspx">
+      <publishTime>12/20/2022 14:16:50</publishTime>
+    </File>
+    <File Include="contabilita/callcenter/expperiodo-summary-single.aspx">
+      <publishTime>12/20/2022 14:23:34</publishTime>
+    </File>
+    <File Include="contabilita/callcenter/expperiodo-tabulati-all.aspx">
+      <publishTime>12/20/2022 14:25:10</publishTime>
+    </File>
+    <File Include="contabilita/callcenter/expperiodo.aspx">
+      <publishTime>12/20/2022 14:26:57</publishTime>
+    </File>
+    <File Include="contabilita/callcenter/expreport.aspx">
+      <publishTime>12/20/2022 14:57:57</publishTime>
+    </File>
+    <File Include="contabilita/callcenter/fatture/default.aspx">
+      <publishTime>12/20/2022 14:06:31</publishTime>
+    </File>
+    <File Include="contabilita/callcenter/fatture/expdefault.aspx">
+      <publishTime>12/20/2022 14:08:41</publishTime>
+    </File>
+    <File Include="contabilita/callcenter/fatture/expfatture.aspx">
+      <publishTime>12/20/2022 14:09:45</publishTime>
+    </File>
+    <File Include="contabilita/callcenter/fatture/scheda.aspx">
+      <publishTime>12/20/2022 14:11:19</publishTime>
+    </File>
+    <File Include="contabilita/callcenter/local.master">
+      <publishTime>12/20/2022 14:04:49</publishTime>
+    </File>
+    <File Include="contabilita/callcenter/periodo.aspx">
+      <publishTime>12/20/2022 15:01:35</publishTime>
+    </File>
+    <File Include="contabilita/callcenter/report.aspx">
+      <publishTime>12/20/2022 15:00:33</publishTime>
+    </File>
+    <File Include="contabilita/commerciali/expperiodo-tabulati-all.aspx">
+      <publishTime>12/20/2022 15:25:57</publishTime>
+    </File>
+    <File Include="contabilita/commerciali/expperiodo.aspx">
+      <publishTime>12/20/2022 15:28:02</publishTime>
+    </File>
+    <File Include="contabilita/commerciali/expreport.aspx">
+      <publishTime>12/20/2022 15:27:45</publishTime>
+    </File>
+    <File Include="contabilita/commerciali/fatture/default.aspx">
+      <publishTime>12/20/2022 15:13:37</publishTime>
+    </File>
+    <File Include="contabilita/commerciali/fatture/expdefault.aspx">
+      <publishTime>12/20/2022 15:13:23</publishTime>
+    </File>
+    <File Include="contabilita/commerciali/fatture/expfatture.aspx">
+      <publishTime>12/20/2022 15:14:23</publishTime>
+    </File>
+    <File Include="contabilita/commerciali/fatture/scheda.aspx">
+      <publishTime>12/20/2022 15:15:46</publishTime>
+    </File>
+    <File Include="contabilita/commerciali/local.master">
+      <publishTime>12/20/2022 15:34:22</publishTime>
+    </File>
+    <File Include="contabilita/commerciali/periodo.aspx">
+      <publishTime>12/20/2022 15:29:56</publishTime>
+    </File>
+    <File Include="contabilita/commerciali/report.aspx">
+      <publishTime>12/20/2022 15:29:56</publishTime>
+    </File>
+    <File Include="contabilita/home.aspx">
+      <publishTime>12/20/2022 15:52:03</publishTime>
+    </File>
+    <File Include="contabilita/procuratori/expperiodo-summary-all.aspx">
+      <publishTime>12/20/2022 15:44:14</publishTime>
+    </File>
+    <File Include="contabilita/procuratori/expperiodo-summary-single.aspx">
+      <publishTime>12/20/2022 15:43:23</publishTime>
+    </File>
+    <File Include="contabilita/procuratori/expperiodo-tabulati-all.aspx">
+      <publishTime>12/20/2022 15:45:40</publishTime>
+    </File>
+    <File Include="contabilita/procuratori/expperiodo.aspx">
+      <publishTime>12/20/2022 15:47:01</publishTime>
+    </File>
+    <File Include="contabilita/procuratori/expreport.aspx">
+      <publishTime>12/20/2022 15:49:16</publishTime>
+    </File>
+    <File Include="contabilita/procuratori/fatture/default.aspx">
+      <publishTime>12/20/2022 15:35:54</publishTime>
+    </File>
+    <File Include="contabilita/procuratori/fatture/expdefault.aspx">
+      <publishTime>12/20/2022 15:38:27</publishTime>
+    </File>
+    <File Include="contabilita/procuratori/fatture/expfatture.aspx">
+      <publishTime>12/20/2022 15:39:24</publishTime>
+    </File>
+    <File Include="contabilita/procuratori/fatture/scheda.aspx">
+      <publishTime>12/20/2022 15:41:12</publishTime>
+    </File>
+    <File Include="contabilita/procuratori/local.master">
+      <publishTime>12/20/2022 15:33:38</publishTime>
+    </File>
+    <File Include="contabilita/procuratori/periodo.aspx">
+      <publishTime>12/20/2022 15:49:28</publishTime>
+    </File>
+    <File Include="contabilita/procuratori/report.aspx">
+      <publishTime>12/20/2022 15:50:39</publishTime>
+    </File>
+    <File Include="default.aspx">
+      <publishTime>12/19/2022 16:53:57</publishTime>
+    </File>
+    <File Include="doc/Corrispettivi - Manuale per agenti.pdf">
+      <publishTime>01/29/2018 15:28:23</publishTime>
+    </File>
+    <File Include="doc/Corrispettivi - Manuale per call center.pdf">
+      <publishTime>11/28/2017 11:47:09</publishTime>
+    </File>
+    <File Include="doc/Corrispettivi - Manuale per commerciali.pdf">
+      <publishTime>10/30/2017 17:24:19</publishTime>
+    </File>
+    <File Include="doc/Corrispettivi - Manuale per ufficio contabilità.pdf">
+      <publishTime>10/30/2017 15:21:45</publishTime>
+    </File>
+    <File Include="doc/Corrispettivi - Manuale per ufficio del personale.pdf">
+      <publishTime>10/11/2017 12:36:08</publishTime>
+    </File>
+    <File Include="end.aspx">
+      <publishTime>12/19/2022 16:41:35</publishTime>
+    </File>
+    <File Include="errorkey.html">
+      <publishTime>07/10/2021 11:28:18</publishTime>
+    </File>
+    <File Include="excel.aspx">
+      <publishTime>12/28/2022 12:34:04</publishTime>
+    </File>
+    <File Include="header.aspx">
+      <publishTime>12/28/2022 12:35:03</publishTime>
+    </File>
+    <File Include="home.aspx">
+      <publishTime>12/28/2022 12:39:37</publishTime>
+    </File>
+    <File Include="image/abort.gif">
+      <publishTime>08/24/2015 14:32:18</publishTime>
+    </File>
+    <File Include="image/Add.png">
+      <publishTime>08/24/2015 14:32:18</publishTime>
+    </File>
+    <File Include="image/Application.png">
+      <publishTime>02/26/2013 18:04:31</publishTime>
+    </File>
+    <File Include="image/Appointment.png">
+      <publishTime>08/24/2015 14:32:18</publishTime>
+    </File>
+    <File Include="image/archive.png">
+      <publishTime>08/24/2015 14:32:18</publishTime>
+    </File>
+    <File Include="image/backward-grey.png">
+      <publishTime>08/24/2015 14:32:18</publishTime>
+    </File>
+    <File Include="image/base-sharp.png">
+      <publishTime>08/21/2015 16:21:52</publishTime>
+    </File>
+    <File Include="image/calendar.gif">
+      <publishTime>08/24/2015 14:32:18</publishTime>
+    </File>
+    <File Include="image/Calendario.gif">
+      <publishTime>08/24/2015 14:32:18</publishTime>
+    </File>
+    <File Include="image/close.png">
+      <publishTime>08/24/2015 14:32:18</publishTime>
+    </File>
+    <File Include="image/contract.png">
+      <publishTime>08/24/2015 14:32:18</publishTime>
+    </File>
+    <File Include="image/csv.png">
+      <publishTime>09/21/2016 12:41:37</publishTime>
+    </File>
+    <File Include="image/csv2.png">
+      <publishTime>11/17/2015 11:37:52</publishTime>
+    </File>
+    <File Include="image/delete.png">
+      <publishTime>08/24/2015 14:32:18</publishTime>
+    </File>
+    <File Include="image/Document-16.png">
+      <publishTime>09/21/2016 12:41:37</publishTime>
+    </File>
+    <File Include="image/Document-20.png">
+      <publishTime>09/21/2016 12:41:01</publishTime>
+    </File>
+    <File Include="image/Download-20.png">
+      <publishTime>11/25/2015 15:00:08</publishTime>
+    </File>
+    <File Include="image/Download-24.png">
+      <publishTime>11/25/2015 15:00:08</publishTime>
+    </File>
+    <File Include="image/download.png">
+      <publishTime>08/21/2015 15:52:49</publishTime>
+    </File>
+    <File Include="image/Excel.gif">
+      <publishTime>08/24/2015 14:32:18</publishTime>
+    </File>
+    <File Include="image/Find.png">
+      <publishTime>02/26/2013 18:04:31</publishTime>
+    </File>
+    <File Include="image/Globe.png">
+      <publishTime>08/24/2015 14:32:18</publishTime>
+    </File>
+    <File Include="image/List.png">
+      <publishTime>02/26/2013 18:04:31</publishTime>
+    </File>
+    <File Include="image/loading2.gif">
+      <publishTime>05/18/2010 23:58:12</publishTime>
+    </File>
+    <File Include="image/loading5.gif">
+      <publishTime>05/18/2010 23:58:12</publishTime>
+    </File>
+    <File Include="image/loading7.gif">
+      <publishTime>08/24/2015 14:32:18</publishTime>
+    </File>
+    <File Include="image/Modify.png">
+      <publishTime>08/24/2015 14:32:18</publishTime>
+    </File>
+    <File Include="image/MoveArchive.png">
+      <publishTime>08/24/2015 14:32:18</publishTime>
+    </File>
+    <File Include="image/MoveDown.png">
+      <publishTime>08/24/2015 14:32:18</publishTime>
+    </File>
+    <File Include="image/MoveProduction.png">
+      <publishTime>08/24/2015 14:32:18</publishTime>
+    </File>
+    <File Include="image/MoveUp.png">
+      <publishTime>08/24/2015 14:32:18</publishTime>
+    </File>
+    <File Include="image/pdf.png">
+      <publishTime>01/10/2013 11:50:45</publishTime>
+    </File>
+    <File Include="image/pdf2.png">
+      <publishTime>09/27/2017 15:28:18</publishTime>
+    </File>
+    <File Include="image/Pixel/pxl_arancio.gif">
+      <publishTime>08/24/2015 14:32:18</publishTime>
+    </File>
+    <File Include="image/Pixel/pxl_azz.gif">
+      <publishTime>08/24/2015 14:32:18</publishTime>
+    </File>
+    <File Include="image/Pixel/pxl_bianco.gif">
+      <publishTime>08/24/2015 14:32:18</publishTime>
+    </File>
+    <File Include="image/Pixel/pxl_blu.gif">
+      <publishTime>08/24/2015 14:32:18</publishTime>
+    </File>
+    <File Include="image/Pixel/pxl_blu_dark.gif">
+      <publishTime>08/24/2015 14:32:18</publishTime>
+    </File>
+    <File Include="image/Pixel/pxl_grigio.gif">
+      <publishTime>08/24/2015 14:32:18</publishTime>
+    </File>
+    <File Include="image/Pixel/pxl_grigiodark.gif">
+      <publishTime>08/24/2015 14:32:18</publishTime>
+    </File>
+    <File Include="image/Pixel/pxl_gr_azz.gif">
+      <publishTime>08/24/2015 14:32:18</publishTime>
+    </File>
+    <File Include="image/Pixel/pxl_rosso.gif">
+      <publishTime>08/24/2015 14:32:18</publishTime>
+    </File>
+    <File Include="image/Pixel/pxl_verde.gif">
+      <publishTime>08/24/2015 14:32:18</publishTime>
+    </File>
+    <File Include="image/Pixel/pxl_viola.gif">
+      <publishTime>08/24/2015 14:32:18</publishTime>
+    </File>
+    <File Include="image/Print.png">
+      <publishTime>08/12/2011 00:37:38</publishTime>
+    </File>
+    <File Include="image/red-appointment.png">
+      <publishTime>08/24/2015 14:32:18</publishTime>
+    </File>
+    <File Include="image/save.gif">
+      <publishTime>08/24/2015 14:32:18</publishTime>
+    </File>
+    <File Include="image/save.png">
+      <publishTime>08/24/2015 14:32:18</publishTime>
+    </File>
+    <File Include="image/saveClose.gif">
+      <publishTime>08/24/2015 14:32:18</publishTime>
+    </File>
+    <File Include="image/selectall.png">
+      <publishTime>08/24/2015 14:32:18</publishTime>
+    </File>
+    <File Include="image/settings.png">
+      <publishTime>08/24/2015 14:32:19</publishTime>
+    </File>
+    <File Include="image/status/1.png">
+      <publishTime>02/26/2013 18:04:31</publishTime>
+    </File>
+    <File Include="image/status/2.png">
+      <publishTime>02/26/2013 18:04:31</publishTime>
+    </File>
+    <File Include="image/status/3.png">
+      <publishTime>02/26/2013 18:04:31</publishTime>
+    </File>
+    <File Include="image/status/4.png">
+      <publishTime>02/26/2013 18:04:31</publishTime>
+    </File>
+    <File Include="image/status/5.png">
+      <publishTime>02/26/2013 18:04:31</publishTime>
+    </File>
+    <File Include="image/status/tag-grey.png">
+      <publishTime>08/21/2015 16:22:13</publishTime>
+    </File>
+    <File Include="image/status/tag-sharp.png">
+      <publishTime>08/21/2015 16:22:13</publishTime>
+    </File>
+    <File Include="image/Sync.png">
+      <publishTime>02/26/2013 18:04:31</publishTime>
+    </File>
+    <File Include="image/tab/close_16x16.png">
+      <publishTime>05/25/2019 08:10:03</publishTime>
+    </File>
+    <File Include="image/tab/close_24x24.png">
+      <publishTime>05/25/2019 08:10:10</publishTime>
+    </File>
+    <File Include="image/tab/elab_16x16.png">
+      <publishTime>05/25/2019 08:11:37</publishTime>
+    </File>
+    <File Include="image/tab/elab_24x24.png">
+      <publishTime>05/25/2019 08:11:43</publishTime>
+    </File>
+    <File Include="image/tab/elab_close_16x16.png">
+      <publishTime>05/25/2019 08:15:00</publishTime>
+    </File>
+    <File Include="image/tab/elab_close_24x24.png">
+      <publishTime>05/25/2019 08:15:04</publishTime>
+    </File>
+    <File Include="image/tag-black.png">
+      <publishTime>02/26/2013 18:04:31</publishTime>
+    </File>
+    <File Include="image/tag-blue.png">
+      <publishTime>02/26/2013 18:04:31</publishTime>
+    </File>
+    <File Include="image/tag-green.png">
+      <publishTime>02/26/2013 18:04:31</publishTime>
+    </File>
+    <File Include="image/tag-grey.png">
+      <publishTime>08/21/2015 16:22:13</publishTime>
+    </File>
+    <File Include="image/tag-red.png">
+      <publishTime>02/26/2013 18:04:31</publishTime>
+    </File>
+    <File Include="image/tag-sharp.png">
+      <publishTime>08/21/2015 16:22:13</publishTime>
+    </File>
+    <File Include="image/tag-yellow.png">
+      <publishTime>02/26/2013 18:04:31</publishTime>
+    </File>
+    <File Include="image/tagbk.png">
+      <publishTime>12/12/2006 20:10:12</publishTime>
+    </File>
+    <File Include="image/Telerik/details.gif">
+      <publishTime>05/18/2010 23:58:12</publishTime>
+    </File>
+    <File Include="image/Telerik/loading.gif">
+      <publishTime>05/18/2010 23:58:12</publishTime>
+    </File>
+    <File Include="image/Telerik/loading1.gif">
+      <publishTime>05/18/2010 23:58:12</publishTime>
+    </File>
+    <File Include="image/Telerik/loading2.gif">
+      <publishTime>05/18/2010 23:58:12</publishTime>
+    </File>
+    <File Include="image/Telerik/loading3.gif">
+      <publishTime>05/18/2010 23:58:12</publishTime>
+    </File>
+    <File Include="image/Telerik/loading4.gif">
+      <publishTime>05/18/2010 23:58:12</publishTime>
+    </File>
+    <File Include="image/Telerik/loading5.gif">
+      <publishTime>05/18/2010 23:58:12</publishTime>
+    </File>
+    <File Include="image/Telerik/loading6.gif">
+      <publishTime>05/18/2010 23:58:12</publishTime>
+    </File>
+    <File Include="image/Telerik/loading7.gif">
+      <publishTime>05/18/2010 23:58:12</publishTime>
+    </File>
+    <File Include="image/Telerik/LoadingProgressBar.gif">
+      <publishTime>05/18/2010 23:58:12</publishTime>
+    </File>
+    <File Include="image/Telerik/LoadingVerticalBar.gif">
+      <publishTime>05/18/2010 23:58:12</publishTime>
+    </File>
+    <File Include="image/tooltip-close.png">
+      <publishTime>08/24/2015 14:32:19</publishTime>
+    </File>
+    <File Include="image/tooltip-open.png">
+      <publishTime>08/24/2015 14:32:19</publishTime>
+    </File>
+    <File Include="image/View.png">
+      <publishTime>02/26/2013 18:04:31</publishTime>
+    </File>
+    <File Include="legendStatusFattura.ascx">
+      <publishTime>12/19/2022 16:36:58</publishTime>
+    </File>
+    <File Include="legendStatusTabulato.ascx">
+      <publishTime>12/19/2022 16:34:51</publishTime>
+    </File>
+    <File Include="login.aspx">
+      <publishTime>12/19/2022 16:31:55</publishTime>
+    </File>
+    <File Include="logout.aspx">
+      <publishTime>12/28/2022 12:36:13</publishTime>
+    </File>
+    <File Include="PrecompiledApp.config">
+      <publishTime>12/28/2022 12:41:55</publishTime>
+    </File>
+    <File Include="redirectExport.aspx">
+      <publishTime>12/28/2022 12:28:18</publishTime>
+    </File>
+    <File Include="redirectView.aspx">
+      <publishTime>12/28/2022 12:26:46</publishTime>
+    </File>
+    <File Include="scripts/jquery-1.4.1.js">
+      <publishTime>08/24/2015 14:32:19</publishTime>
+    </File>
+    <File Include="scripts/jquery-1.4.1.min.js">
+      <publishTime>08/24/2015 14:32:19</publishTime>
+    </File>
+    <File Include="settings/ag-ctr/default.aspx">
+      <publishTime>12/20/2022 16:35:14</publishTime>
+    </File>
+    <File Include="settings/ag-ctr/local.master">
+      <publishTime>12/20/2022 16:07:34</publishTime>
+    </File>
+    <File Include="settings/ag-ctr/scheda.aspx">
+      <publishTime>12/20/2022 16:35:25</publishTime>
+    </File>
+    <File Include="settings/bc-cm/default.aspx">
+      <publishTime>12/20/2022 16:37:50</publishTime>
+    </File>
+    <File Include="settings/bc-cm/local.master">
+      <publishTime>12/20/2022 16:37:50</publishTime>
+    </File>
+    <File Include="settings/bc-cm/scheda.aspx">
+      <publishTime>12/20/2022 16:37:50</publishTime>
+    </File>
+    <File Include="settings/bc-cs-maxmese/default.aspx">
+      <publishTime>12/20/2022 16:54:58</publishTime>
+    </File>
+    <File Include="settings/bc-cs-maxmese/local.master">
+      <publishTime>12/20/2022 16:51:32</publishTime>
+    </File>
+    <File Include="settings/bc-cs-maxmese/scheda.aspx">
+      <publishTime>12/20/2022 16:54:14</publishTime>
+    </File>
+    <File Include="settings/bc-cs/default.aspx">
+      <publishTime>12/20/2022 16:49:44</publishTime>
+    </File>
+    <File Include="settings/bc-cs/local.master">
+      <publishTime>12/20/2022 16:47:11</publishTime>
+    </File>
+    <File Include="settings/bc-cs/scheda.aspx">
+      <publishTime>12/20/2022 16:49:42</publishTime>
+    </File>
+    <File Include="settings/bsl-cg/default.aspx">
+      <publishTime>12/20/2022 17:00:39</publishTime>
+    </File>
+    <File Include="settings/bsl-cg/local.master">
+      <publishTime>12/20/2022 17:01:06</publishTime>
+    </File>
+    <File Include="settings/bsl-cg/scheda.aspx">
+      <publishTime>12/20/2022 17:01:04</publishTime>
+    </File>
+    <File Include="settings/bsl-cm/default.aspx">
+      <publishTime>12/20/2022 17:03:55</publishTime>
+    </File>
+    <File Include="settings/bsl-cm/local.master">
+      <publishTime>12/20/2022 17:03:00</publishTime>
+    </File>
+    <File Include="settings/bsl-cm/scheda.aspx">
+      <publishTime>12/20/2022 17:05:03</publishTime>
+    </File>
+    <File Include="settings/callcenter/default.aspx">
+      <publishTime>12/20/2022 17:09:02</publishTime>
+    </File>
+    <File Include="settings/callcenter/local.master">
+      <publishTime>12/20/2022 17:09:02</publishTime>
+    </File>
+    <File Include="settings/callcenter/scheda.aspx">
+      <publishTime>12/20/2022 17:09:00</publishTime>
+    </File>
+    <File Include="Site.Master">
+      <publishTime>11/18/2022 15:47:11</publishTime>
+    </File>
+    <File Include="SiteAgente.Master">
+      <publishTime>12/19/2022 16:47:45</publishTime>
+    </File>
+    <File Include="SiteCallCenter.Master">
+      <publishTime>12/19/2022 16:50:11</publishTime>
+    </File>
+    <File Include="siteClear.Master">
+      <publishTime>12/28/2022 12:25:21</publishTime>
+    </File>
+    <File Include="SiteCommerciale.Master">
+      <publishTime>12/19/2022 16:51:28</publishTime>
+    </File>
+    <File Include="SiteContabilita.Master">
+      <publishTime>12/20/2022 09:41:34</publishTime>
+    </File>
+    <File Include="siteExport.Master">
+      <publishTime>12/28/2022 12:23:00</publishTime>
+    </File>
+    <File Include="SiteUffPersonale.Master">
+      <publishTime>12/20/2022 09:42:43</publishTime>
+    </File>
+    <File Include="styles/font.css">
+      <publishTime>08/25/2021 11:32:20</publishTime>
+    </File>
+    <File Include="styles/login.css">
+      <publishTime>05/04/2021 15:38:31</publishTime>
+    </File>
+    <File Include="styles/Site.css">
+      <publishTime>04/17/2019 20:04:13</publishTime>
+    </File>
+    <File Include="tabulati/agenti/bc/dettaglio.aspx">
+      <publishTime>12/20/2022 17:35:52</publishTime>
+    </File>
+    <File Include="tabulati/agenti/bc/dettaglioWeek.aspx">
+      <publishTime>12/20/2022 17:37:46</publishTime>
+    </File>
+    <File Include="tabulati/agenti/bc/expdettaglio.aspx">
+      <publishTime>12/20/2022 17:40:55</publishTime>
+    </File>
+    <File Include="tabulati/agenti/bc/expdettaglioWeek.aspx">
+      <publishTime>12/20/2022 17:41:32</publishTime>
+    </File>
+    <File Include="tabulati/agenti/bc/expreport.aspx">
+      <publishTime>12/20/2022 17:43:04</publishTime>
+    </File>
+    <File Include="tabulati/agenti/bc/local.master">
+      <publishTime>12/20/2022 17:34:52</publishTime>
+    </File>
+    <File Include="tabulati/agenti/bc/report.aspx">
+      <publishTime>12/20/2022 17:44:14</publishTime>
+    </File>
+    <File Include="tabulati/agenti/be/expreport.aspx">
+      <publishTime>12/20/2022 17:47:49</publishTime>
+    </File>
+    <File Include="tabulati/agenti/be/local.master">
+      <publishTime>12/20/2022 17:46:18</publishTime>
+    </File>
+    <File Include="tabulati/agenti/be/localUffPers.master">
+      <publishTime>12/20/2022 17:46:51</publishTime>
+    </File>
+    <File Include="tabulati/agenti/be/report.aspx">
+      <publishTime>12/20/2022 17:51:20</publishTime>
+    </File>
+    <File Include="tabulati/agenti/be/scheda.aspx">
+      <publishTime>12/20/2022 17:51:20</publishTime>
+    </File>
+    <File Include="tabulati/agenti/bsl/expreport.aspx">
+      <publishTime>12/20/2022 18:01:10</publishTime>
+    </File>
+    <File Include="tabulati/agenti/bsl/local.master">
+      <publishTime>12/20/2022 18:01:10</publishTime>
+    </File>
+    <File Include="tabulati/agenti/bsl/localUffPers.master">
+      <publishTime>12/20/2022 18:00:03</publishTime>
+    </File>
+    <File Include="tabulati/agenti/bsl/report.aspx">
+      <publishTime>12/20/2022 18:02:23</publishTime>
+    </File>
+    <File Include="tabulati/agenti/bslintegr/expreport.aspx">
+      <publishTime>12/28/2022 11:12:15</publishTime>
+    </File>
+    <File Include="tabulati/agenti/bslintegr/local.master">
+      <publishTime>12/28/2022 11:08:35</publishTime>
+    </File>
+    <File Include="tabulati/agenti/bslintegr/localUffPers.master">
+      <publishTime>12/28/2022 11:08:35</publishTime>
+    </File>
+    <File Include="tabulati/agenti/bslintegr/report.aspx">
+      <publishTime>12/28/2022 11:12:14</publishTime>
+    </File>
+    <File Include="tabulati/agenti/bslintegr/scheda.aspx">
+      <publishTime>12/28/2022 11:12:14</publishTime>
+    </File>
+    <File Include="tabulati/agenti/bslorestraord/local.master">
+      <publishTime>12/28/2022 11:15:20</publishTime>
+    </File>
+    <File Include="tabulati/agenti/bslorestraord/localUffPers.master">
+      <publishTime>12/28/2022 11:16:15</publishTime>
+    </File>
+    <File Include="tabulati/agenti/bslorestraord/report.aspx">
+      <publishTime>12/28/2022 11:16:58</publishTime>
+    </File>
+    <File Include="tabulati/agenti/ccrequestreport.aspx">
+      <publishTime>12/20/2022 17:24:04</publishTime>
+    </File>
+    <File Include="tabulati/agenti/corrispettivi/dettaglio.aspx">
+      <publishTime>12/28/2022 11:21:20</publishTime>
+    </File>
+    <File Include="tabulati/agenti/corrispettivi/expdettaglio.aspx">
+      <publishTime>12/28/2022 11:21:19</publishTime>
+    </File>
+    <File Include="tabulati/agenti/corrispettivi/expdettaglio2.aspx">
+      <publishTime>12/28/2022 11:22:23</publishTime>
+    </File>
+    <File Include="tabulati/agenti/corrispettivi/expreport.aspx">
+      <publishTime>12/28/2022 11:23:06</publishTime>
+    </File>
+    <File Include="tabulati/agenti/corrispettivi/local.master">
+      <publishTime>12/28/2022 11:18:13</publishTime>
+    </File>
+    <File Include="tabulati/agenti/corrispettivi/report.aspx">
+      <publishTime>12/28/2022 11:24:04</publishTime>
+    </File>
+    <File Include="tabulati/agenti/finemese/expreport.aspx">
+      <publishTime>12/28/2022 11:28:16</publishTime>
+    </File>
+    <File Include="tabulati/agenti/finemese/local.master">
+      <publishTime>12/28/2022 11:27:38</publishTime>
+    </File>
+    <File Include="tabulati/agenti/finemese/report.aspx">
+      <publishTime>12/28/2022 11:29:20</publishTime>
+    </File>
+    <File Include="tabulati/agenti/infoAgente.ascx">
+      <publishTime>12/20/2022 17:25:25</publishTime>
+    </File>
+    <File Include="tabulati/agenti/integrazioni/dettaglio.aspx">
+      <publishTime>12/28/2022 11:35:01</publishTime>
+    </File>
+    <File Include="tabulati/agenti/integrazioni/expdettaglio.aspx">
+      <publishTime>12/28/2022 11:35:01</publishTime>
+    </File>
+    <File Include="tabulati/agenti/integrazioni/expreport.aspx">
+      <publishTime>12/28/2022 11:35:01</publishTime>
+    </File>
+    <File Include="tabulati/agenti/integrazioni/local.master">
+      <publishTime>12/28/2022 11:31:18</publishTime>
+    </File>
+    <File Include="tabulati/agenti/integrazioni/report.aspx">
+      <publishTime>12/28/2022 11:35:00</publishTime>
+    </File>
+    <File Include="tabulati/agenti/manuale/local.master">
+      <publishTime>12/28/2022 11:43:06</publishTime>
+    </File>
+    <File Include="tabulati/agenti/manuale/scheda.aspx">
+      <publishTime>12/28/2022 11:43:05</publishTime>
+    </File>
+    <File Include="tabulati/agenti/premi/dettaglio.aspx">
+      <publishTime>12/28/2022 12:01:34</publishTime>
+    </File>
+    <File Include="tabulati/agenti/premi/expdettaglio.aspx">
+      <publishTime>12/28/2022 12:01:34</publishTime>
+    </File>
+    <File Include="tabulati/agenti/premi/expreport.aspx">
+      <publishTime>12/28/2022 12:03:41</publishTime>
+    </File>
+    <File Include="tabulati/agenti/premi/local.master">
+      <publishTime>12/28/2022 11:58:58</publishTime>
+    </File>
+    <File Include="tabulati/agenti/premi/report.aspx">
+      <publishTime>12/28/2022 12:13:12</publishTime>
+    </File>
+    <File Include="tabulati/agenti/unificato/expreport.aspx">
+      <publishTime>12/28/2022 12:06:04</publishTime>
+    </File>
+    <File Include="tabulati/agenti/unificato/local.master">
+      <publishTime>12/28/2022 12:11:37</publishTime>
+    </File>
+    <File Include="tabulati/agenti/unificato/report.aspx">
+      <publishTime>12/28/2022 12:08:33</publishTime>
+    </File>
+    <File Include="tabulati/commerciali/corrispettivi/dettaglio.aspx">
+      <publishTime>12/20/2022 17:18:48</publishTime>
+    </File>
+    <File Include="tabulati/commerciali/corrispettivi/expdettaglio.aspx">
+      <publishTime>12/20/2022 17:21:04</publishTime>
+    </File>
+    <File Include="tabulati/commerciali/corrispettivi/expreport.aspx">
+      <publishTime>12/20/2022 17:21:02</publishTime>
+    </File>
+    <File Include="tabulati/commerciali/corrispettivi/local.master">
+      <publishTime>12/20/2022 17:17:47</publishTime>
+    </File>
+    <File Include="tabulati/commerciali/corrispettivi/report.aspx">
+      <publishTime>12/20/2022 17:22:15</publishTime>
+    </File>
+    <File Include="uffpersonale/expperiodo-summary-all.aspx">
+      <publishTime>12/20/2022 12:45:51</publishTime>
+    </File>
+    <File Include="uffpersonale/expperiodo-tabulati-all.aspx">
+      <publishTime>12/20/2022 12:47:09</publishTime>
+    </File>
+    <File Include="uffpersonale/expperiodo.aspx">
+      <publishTime>12/20/2022 12:50:04</publishTime>
+    </File>
+    <File Include="uffpersonale/expperiodo2.aspx">
+      <publishTime>12/20/2022 12:48:51</publishTime>
+    </File>
+    <File Include="uffpersonale/home.aspx">
+      <publishTime>12/20/2022 12:50:02</publishTime>
+    </File>
+    <File Include="uffpersonale/local.master">
+      <publishTime>12/20/2022 12:45:12</publishTime>
+    </File>
+    <File Include="uffpersonale/periodo.aspx">
+      <publishTime>12/20/2022 12:50:50</publishTime>
+    </File>
+    <File Include="uffpersonale/report.aspx">
+      <publishTime>12/20/2022 12:51:54</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>12/28/2022 12:41:08</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

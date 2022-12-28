@@ -1,0 +1,1750 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{46C2E8E8-5C16-4D05-9571-4C3E2E04CDA9}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>corrispettivi.web</RootNamespace>
+    <AssemblyName>corrispettivi.web</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44395</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ClosedXML">
+      <HintPath>..\..\..\.DLL.ONLINE\ClosedXml\ClosedXML.dll</HintPath>
+    </Reference>
+    <Reference Include="DocumentFormat.OpenXml">
+      <HintPath>..\..\..\.DLL.ONLINE\ClosedXml\DocumentFormat.OpenXml.dll</HintPath>
+    </Reference>
+    <Reference Include="it.tools.library">
+      <HintPath>..\..\..\.DLL.ONLINE\it.tools.library.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.13.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="Telerik.Web.UI">
+      <HintPath>..\..\..\.DLL.ONLINE\Telerik.Web.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.Web.UI.Skins">
+      <HintPath>..\..\..\.DLL.ONLINE\Telerik.Web.UI.Skins.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="404API.html" />
+    <Content Include="admin\exprepagexanno.aspx" />
+    <Content Include="admin\exprepagexperiodo.aspx" />
+    <Content Include="admin\exprepccxanno.aspx" />
+    <Content Include="admin\exprepccxperiodo.aspx" />
+    <Content Include="admin\home.aspx" />
+    <Content Include="admin\repagexanno.aspx" />
+    <Content Include="admin\repagexcontrollo.aspx" />
+    <Content Include="admin\repagexperiodo.aspx" />
+    <Content Include="admin\repccxanno.aspx" />
+    <Content Include="admin\repccxperiodo.aspx" />
+    <Content Include="agenti\default.aspx" />
+    <Content Include="agenti\expreport-rip.aspx" />
+    <Content Include="agenti\expsummary.aspx" />
+    <Content Include="agenti\report.aspx" />
+    <Content Include="anomalie\alertContratti.ascx" />
+    <Content Include="anomalie\alertCounter.ascx" />
+    <Content Include="anomalie\expAlertAgenti.aspx" />
+    <Content Include="anomalie\repAlertAgenti.aspx" />
+    <Content Include="autologin.aspx" />
+    <Content Include="azioni.aspx" />
+    <Content Include="callcenter\expperiodo-summary.aspx" />
+    <Content Include="callcenter\expperiodo-tabulati.aspx" />
+    <Content Include="callcenter\expreport.aspx" />
+    <Content Include="callcenter\expsummary.aspx" />
+    <Content Include="callcenter\home.aspx" />
+    <Content Include="callcenter\periodo.aspx" />
+    <Content Include="callcenter\report.aspx" />
+    <Content Include="callcenter\requestreport.aspx" />
+    <Content Include="callcenter\summary.aspx" />
+    <Content Include="commerciali\expreport-rip.aspx" />
+    <Content Include="commerciali\report.aspx" />
+    <Content Include="contabilita\agenti\expperiodo-summary-all.aspx" />
+    <Content Include="contabilita\agenti\expperiodo-summary-single.aspx" />
+    <Content Include="contabilita\agenti\expperiodo-tabulati-all.aspx" />
+    <Content Include="contabilita\agenti\expperiodo.aspx" />
+    <Content Include="contabilita\agenti\expreport.aspx" />
+    <Content Include="contabilita\agenti\fatture\default.aspx" />
+    <Content Include="contabilita\agenti\fatture\expdefault.aspx" />
+    <Content Include="contabilita\agenti\fatture\expfatture.aspx" />
+    <Content Include="contabilita\agenti\fatture\scheda.aspx" />
+    <Content Include="contabilita\agenti\periodo.aspx" />
+    <Content Include="contabilita\agenti\report.aspx" />
+    <Content Include="contabilita\callcenter\expperiodo-summary-all.aspx" />
+    <Content Include="contabilita\callcenter\expperiodo-summary-single.aspx" />
+    <Content Include="contabilita\callcenter\expperiodo-tabulati-all.aspx" />
+    <Content Include="contabilita\callcenter\expperiodo.aspx" />
+    <Content Include="contabilita\callcenter\expreport.aspx" />
+    <Content Include="contabilita\callcenter\fatture\default.aspx" />
+    <Content Include="contabilita\callcenter\fatture\expdefault.aspx" />
+    <Content Include="contabilita\callcenter\fatture\expfatture.aspx" />
+    <Content Include="contabilita\callcenter\fatture\scheda.aspx" />
+    <Content Include="contabilita\callcenter\periodo.aspx" />
+    <Content Include="contabilita\callcenter\report.aspx" />
+    <Content Include="contabilita\commerciali\expperiodo-tabulati-all.aspx" />
+    <Content Include="contabilita\commerciali\expperiodo.aspx" />
+    <Content Include="contabilita\commerciali\expreport.aspx" />
+    <Content Include="contabilita\commerciali\fatture\default.aspx" />
+    <Content Include="contabilita\commerciali\fatture\expdefault.aspx" />
+    <Content Include="contabilita\commerciali\fatture\expfatture.aspx" />
+    <Content Include="contabilita\commerciali\fatture\scheda.aspx" />
+    <Content Include="contabilita\commerciali\periodo.aspx" />
+    <Content Include="contabilita\commerciali\report.aspx" />
+    <Content Include="contabilita\home.aspx" />
+    <Content Include="contabilita\procuratori\expperiodo-summary-all.aspx" />
+    <Content Include="contabilita\procuratori\expperiodo-summary-single.aspx" />
+    <Content Include="contabilita\procuratori\expperiodo-tabulati-all.aspx" />
+    <Content Include="contabilita\procuratori\expperiodo.aspx" />
+    <Content Include="contabilita\procuratori\expreport.aspx" />
+    <Content Include="contabilita\procuratori\fatture\default.aspx" />
+    <Content Include="contabilita\procuratori\fatture\expdefault.aspx" />
+    <Content Include="contabilita\procuratori\fatture\expfatture.aspx" />
+    <Content Include="contabilita\procuratori\fatture\scheda.aspx" />
+    <Content Include="contabilita\procuratori\periodo.aspx" />
+    <Content Include="contabilita\procuratori\report.aspx" />
+    <Content Include="errorkey.html" />
+    <Content Include="excel.aspx" />
+    <Content Include="header.aspx" />
+    <Content Include="home.aspx" />
+    <Content Include="image\abort.gif" />
+    <Content Include="image\Add.png" />
+    <Content Include="image\Application.png" />
+    <Content Include="image\Appointment.png" />
+    <Content Include="image\archive.png" />
+    <Content Include="image\backward-grey.png" />
+    <Content Include="image\base-sharp.png" />
+    <Content Include="image\calendar.gif" />
+    <Content Include="image\Calendario.gif" />
+    <Content Include="image\close.png" />
+    <Content Include="image\contract.png" />
+    <Content Include="image\csv.png" />
+    <Content Include="image\csv2.png" />
+    <Content Include="image\delete.png" />
+    <Content Include="image\Document-16.png" />
+    <Content Include="image\Document-20.png" />
+    <Content Include="image\Download-20.png" />
+    <Content Include="image\Download-24.png" />
+    <Content Include="image\download.png" />
+    <Content Include="image\Excel.gif" />
+    <Content Include="image\Find.png" />
+    <Content Include="image\Globe.png" />
+    <Content Include="image\List.png" />
+    <Content Include="image\loading2.gif" />
+    <Content Include="image\loading5.gif" />
+    <Content Include="image\loading7.gif" />
+    <Content Include="image\Modify.png" />
+    <Content Include="image\MoveArchive.png" />
+    <Content Include="image\MoveDown.png" />
+    <Content Include="image\MoveProduction.png" />
+    <Content Include="image\MoveUp.png" />
+    <Content Include="image\pdf.png" />
+    <Content Include="image\pdf2.png" />
+    <Content Include="image\Pixel\pxl_arancio.gif" />
+    <Content Include="image\Pixel\pxl_azz.gif" />
+    <Content Include="image\Pixel\pxl_bianco.gif" />
+    <Content Include="image\Pixel\pxl_blu.gif" />
+    <Content Include="image\Pixel\pxl_blu_dark.gif" />
+    <Content Include="image\Pixel\pxl_grigio.gif" />
+    <Content Include="image\Pixel\pxl_grigiodark.gif" />
+    <Content Include="image\Pixel\pxl_gr_azz.gif" />
+    <Content Include="image\Pixel\pxl_rosso.gif" />
+    <Content Include="image\Pixel\pxl_verde.gif" />
+    <Content Include="image\Pixel\pxl_viola.gif" />
+    <Content Include="image\Print.png" />
+    <Content Include="image\red-appointment.png" />
+    <Content Include="image\save.gif" />
+    <Content Include="image\save.png" />
+    <Content Include="image\saveClose.gif" />
+    <Content Include="image\selectall.png" />
+    <Content Include="image\settings.png" />
+    <Content Include="image\status\1.png" />
+    <Content Include="image\status\2.png" />
+    <Content Include="image\status\3.png" />
+    <Content Include="image\status\4.png" />
+    <Content Include="image\status\5.png" />
+    <Content Include="image\status\tag-grey.png" />
+    <Content Include="image\status\tag-sharp.png" />
+    <Content Include="image\Sync.png" />
+    <Content Include="image\tab\close_16x16.png" />
+    <Content Include="image\tab\close_24x24.png" />
+    <Content Include="image\tab\elab_16x16.png" />
+    <Content Include="image\tab\elab_24x24.png" />
+    <Content Include="image\tab\elab_close_16x16.png" />
+    <Content Include="image\tab\elab_close_24x24.png" />
+    <Content Include="image\tag-black.png" />
+    <Content Include="image\tag-blue.png" />
+    <Content Include="image\tag-green.png" />
+    <Content Include="image\tag-grey.png" />
+    <Content Include="image\tag-red.png" />
+    <Content Include="image\tag-sharp.png" />
+    <Content Include="image\tag-yellow.png" />
+    <Content Include="image\tagbk.png" />
+    <Content Include="image\Telerik\details.gif" />
+    <Content Include="image\Telerik\loading.gif" />
+    <Content Include="image\Telerik\loading1.gif" />
+    <Content Include="image\Telerik\loading2.gif" />
+    <Content Include="image\Telerik\loading3.gif" />
+    <Content Include="image\Telerik\loading4.gif" />
+    <Content Include="image\Telerik\loading5.gif" />
+    <Content Include="image\Telerik\loading6.gif" />
+    <Content Include="image\Telerik\loading7.gif" />
+    <Content Include="image\Telerik\LoadingProgressBar.gif" />
+    <Content Include="image\Telerik\LoadingVerticalBar.gif" />
+    <Content Include="image\tooltip-close.png" />
+    <Content Include="image\tooltip-open.png" />
+    <Content Include="image\View.png" />
+    <Content Include="legendStatusTabulato.ascx" />
+    <Content Include="admin\local.master" />
+    <Content Include="agenti\local.master" />
+    <Content Include="callcenter\local.master" />
+    <Content Include="commerciali\local.master" />
+    <Content Include="contabilita\agenti\local.master" />
+    <Content Include="contabilita\callcenter\local.master" />
+    <Content Include="contabilita\commerciali\local.master" />
+    <Content Include="contabilita\procuratori\local.master" />
+    <Content Include="blank.Master" />
+    <None Include="Properties\PublishProfiles\Debug.pubxml" />
+    <None Include="Properties\PublishProfiles\Release.pubxml" />
+    <None Include="scripts\jquery-1.4.1-vsdoc.js" />
+    <Content Include="logout.aspx" />
+    <Content Include="redirectExport.aspx" />
+    <Content Include="redirectView.aspx" />
+    <Content Include="scripts\jquery-1.4.1.js" />
+    <Content Include="scripts\jquery-1.4.1.min.js" />
+    <Content Include="settings\ag-ctr\default.aspx" />
+    <Content Include="settings\ag-ctr\scheda.aspx" />
+    <Content Include="settings\bc-cm\default.aspx" />
+    <Content Include="settings\bc-cm\scheda.aspx" />
+    <Content Include="settings\bc-cs-maxmese\default.aspx" />
+    <Content Include="settings\bc-cs-maxmese\scheda.aspx" />
+    <Content Include="settings\bc-cs\default.aspx" />
+    <Content Include="settings\bc-cs\scheda.aspx" />
+    <Content Include="settings\bsl-cg\default.aspx" />
+    <Content Include="settings\bsl-cg\scheda.aspx" />
+    <Content Include="settings\bsl-cm\default.aspx" />
+    <Content Include="settings\bsl-cm\scheda.aspx" />
+    <Content Include="settings\callcenter\default.aspx" />
+    <Content Include="settings\callcenter\scheda.aspx" />
+    <Content Include="Site.Master" />
+    <Content Include="styles\font.css" />
+    <Content Include="styles\login.css" />
+    <Content Include="styles\Site.css" />
+    <Content Include="tabulati\agenti\bc\dettaglio.aspx" />
+    <Content Include="tabulati\agenti\bc\dettaglioWeek.aspx" />
+    <Content Include="tabulati\agenti\bc\expdettaglio.aspx" />
+    <Content Include="tabulati\agenti\bc\expdettaglioWeek.aspx" />
+    <Content Include="tabulati\agenti\bc\expreport.aspx" />
+    <Content Include="tabulati\agenti\bc\report.aspx" />
+    <Content Include="tabulati\agenti\be\expreport.aspx" />
+    <Content Include="tabulati\agenti\be\report.aspx" />
+    <Content Include="tabulati\agenti\be\scheda.aspx" />
+    <Content Include="tabulati\agenti\bslintegr\expreport.aspx" />
+    <Content Include="tabulati\agenti\bslintegr\report.aspx" />
+    <Content Include="tabulati\agenti\bslintegr\scheda.aspx" />
+    <Content Include="tabulati\agenti\bslorestraord\report.aspx" />
+    <Content Include="tabulati\agenti\bsl\expreport.aspx" />
+    <Content Include="tabulati\agenti\bsl\report.aspx" />
+    <Content Include="tabulati\agenti\ccrequestreport.aspx" />
+    <Content Include="tabulati\agenti\corrispettivi\dettaglio.aspx" />
+    <Content Include="tabulati\agenti\corrispettivi\expdettaglio.aspx" />
+    <Content Include="tabulati\agenti\corrispettivi\expdettaglio2.aspx" />
+    <Content Include="tabulati\agenti\corrispettivi\expreport.aspx" />
+    <Content Include="tabulati\agenti\corrispettivi\report.aspx" />
+    <Content Include="tabulati\agenti\finemese\expreport.aspx" />
+    <Content Include="tabulati\agenti\finemese\report.aspx" />
+    <Content Include="tabulati\agenti\infoAgente.ascx" />
+    <Content Include="tabulati\agenti\integrazioni\dettaglio.aspx" />
+    <Content Include="tabulati\agenti\integrazioni\expdettaglio.aspx" />
+    <Content Include="tabulati\agenti\integrazioni\expreport.aspx" />
+    <Content Include="tabulati\agenti\integrazioni\report.aspx" />
+    <Content Include="tabulati\agenti\manuale\scheda.aspx" />
+    <Content Include="tabulati\agenti\premi\dettaglio.aspx" />
+    <Content Include="tabulati\agenti\premi\expdettaglio.aspx" />
+    <Content Include="tabulati\agenti\premi\expreport.aspx" />
+    <Content Include="tabulati\agenti\premi\report.aspx" />
+    <Content Include="tabulati\agenti\unificato\expreport.aspx" />
+    <Content Include="tabulati\agenti\unificato\report.aspx" />
+    <Content Include="tabulati\commerciali\corrispettivi\dettaglio.aspx" />
+    <Content Include="tabulati\commerciali\corrispettivi\expdettaglio.aspx" />
+    <Content Include="tabulati\commerciali\corrispettivi\expreport.aspx" />
+    <Content Include="tabulati\commerciali\corrispettivi\report.aspx" />
+    <Content Include="uffpersonale\expperiodo-summary-all.aspx" />
+    <Content Include="uffpersonale\expperiodo-tabulati-all.aspx" />
+    <Content Include="uffpersonale\expperiodo.aspx" />
+    <Content Include="uffpersonale\expperiodo2.aspx" />
+    <Content Include="uffpersonale\home.aspx" />
+    <Content Include="uffpersonale\periodo.aspx" />
+    <Content Include="uffpersonale\report.aspx" />
+    <Content Include="Web.config" />
+    <Content Include="login.aspx" />
+    <Content Include="legendStatusFattura.ascx" />
+    <Content Include="end.aspx" />
+    <Content Include="default.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="admin\exprepagexanno.aspx.cs">
+      <DependentUpon>exprepagexanno.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\exprepagexanno.aspx.designer.cs">
+      <DependentUpon>exprepagexanno.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\exprepagexperiodo.aspx.cs">
+      <DependentUpon>exprepagexperiodo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\exprepagexperiodo.aspx.designer.cs">
+      <DependentUpon>exprepagexperiodo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\exprepccxanno.aspx.cs">
+      <DependentUpon>exprepccxanno.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\exprepccxanno.aspx.designer.cs">
+      <DependentUpon>exprepccxanno.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\exprepccxperiodo.aspx.cs">
+      <DependentUpon>exprepccxperiodo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\exprepccxperiodo.aspx.designer.cs">
+      <DependentUpon>exprepccxperiodo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\home.aspx.cs">
+      <DependentUpon>home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\home.aspx.designer.cs">
+      <DependentUpon>home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\local.master.cs">
+      <DependentUpon>local.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\local.master.designer.cs">
+      <DependentUpon>local.master</DependentUpon>
+    </Compile>
+    <Compile Include="admin\repagexanno.aspx.cs">
+      <DependentUpon>repagexanno.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\repagexanno.aspx.designer.cs">
+      <DependentUpon>repagexanno.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\repagexcontrollo.aspx.cs">
+      <DependentUpon>repagexcontrollo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\repagexcontrollo.aspx.designer.cs">
+      <DependentUpon>repagexcontrollo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\repagexperiodo.aspx.cs">
+      <DependentUpon>repagexperiodo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\repagexperiodo.aspx.designer.cs">
+      <DependentUpon>repagexperiodo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\repccxanno.aspx.cs">
+      <DependentUpon>repccxanno.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\repccxanno.aspx.designer.cs">
+      <DependentUpon>repccxanno.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\repccxperiodo.aspx.cs">
+      <DependentUpon>repccxperiodo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\repccxperiodo.aspx.designer.cs">
+      <DependentUpon>repccxperiodo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="agenti\default.aspx.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="agenti\default.aspx.designer.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="agenti\expreport-rip.aspx.cs">
+      <DependentUpon>expreport-rip.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="agenti\expreport-rip.aspx.designer.cs">
+      <DependentUpon>expreport-rip.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="agenti\expsummary.aspx.cs">
+      <DependentUpon>expsummary.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="agenti\expsummary.aspx.designer.cs">
+      <DependentUpon>expsummary.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="agenti\local.master.cs">
+      <DependentUpon>local.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="agenti\local.master.designer.cs">
+      <DependentUpon>local.master</DependentUpon>
+    </Compile>
+    <Compile Include="agenti\report.aspx.cs">
+      <DependentUpon>report.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="agenti\report.aspx.designer.cs">
+      <DependentUpon>report.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="anomalie\alertContratti.ascx.cs">
+      <DependentUpon>alertContratti.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="anomalie\alertContratti.ascx.designer.cs">
+      <DependentUpon>alertContratti.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="anomalie\alertCounter.ascx.cs">
+      <DependentUpon>alertCounter.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="anomalie\alertCounter.ascx.designer.cs">
+      <DependentUpon>alertCounter.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="anomalie\expAlertAgenti.aspx.cs">
+      <DependentUpon>expAlertAgenti.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="anomalie\expAlertAgenti.aspx.designer.cs">
+      <DependentUpon>expAlertAgenti.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="anomalie\repAlertAgenti.aspx.cs">
+      <DependentUpon>repAlertAgenti.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="anomalie\repAlertAgenti.aspx.designer.cs">
+      <DependentUpon>repAlertAgenti.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="autologin.aspx.cs">
+      <DependentUpon>autologin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="autologin.aspx.designer.cs">
+      <DependentUpon>autologin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="azioni.aspx.cs">
+      <DependentUpon>azioni.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="azioni.aspx.designer.cs">
+      <DependentUpon>azioni.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="blank.Master.cs">
+      <DependentUpon>blank.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="blank.Master.designer.cs">
+      <DependentUpon>blank.Master</DependentUpon>
+    </Compile>
+    <Compile Include="callcenter\expperiodo-summary.aspx.cs">
+      <DependentUpon>expperiodo-summary.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="callcenter\expperiodo-summary.aspx.designer.cs">
+      <DependentUpon>expperiodo-summary.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="callcenter\expperiodo-tabulati.aspx.cs">
+      <DependentUpon>expperiodo-tabulati.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="callcenter\expperiodo-tabulati.aspx.designer.cs">
+      <DependentUpon>expperiodo-tabulati.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="callcenter\expreport.aspx.cs">
+      <DependentUpon>expreport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="callcenter\expreport.aspx.designer.cs">
+      <DependentUpon>expreport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="callcenter\expsummary.aspx.cs">
+      <DependentUpon>expsummary.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="callcenter\expsummary.aspx.designer.cs">
+      <DependentUpon>expsummary.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="callcenter\home.aspx.cs">
+      <DependentUpon>home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="callcenter\home.aspx.designer.cs">
+      <DependentUpon>home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="callcenter\local.master.cs">
+      <DependentUpon>local.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="callcenter\local.master.designer.cs">
+      <DependentUpon>local.master</DependentUpon>
+    </Compile>
+    <Compile Include="callcenter\periodo.aspx.cs">
+      <DependentUpon>periodo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="callcenter\periodo.aspx.designer.cs">
+      <DependentUpon>periodo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="callcenter\report.aspx.cs">
+      <DependentUpon>report.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="callcenter\report.aspx.designer.cs">
+      <DependentUpon>report.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="callcenter\requestreport.aspx.cs">
+      <DependentUpon>requestreport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="callcenter\requestreport.aspx.designer.cs">
+      <DependentUpon>requestreport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="callcenter\summary.aspx.cs">
+      <DependentUpon>summary.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="callcenter\summary.aspx.designer.cs">
+      <DependentUpon>summary.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="commerciali\expreport-rip.aspx.cs">
+      <DependentUpon>expreport-rip.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="commerciali\expreport-rip.aspx.designer.cs">
+      <DependentUpon>expreport-rip.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="commerciali\local.master.cs">
+      <DependentUpon>local.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="commerciali\local.master.designer.cs">
+      <DependentUpon>local.master</DependentUpon>
+    </Compile>
+    <Compile Include="commerciali\report.aspx.cs">
+      <DependentUpon>report.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="commerciali\report.aspx.designer.cs">
+      <DependentUpon>report.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="contabilita\agenti\expperiodo-summary-all.aspx.cs">
+      <DependentUpon>expperiodo-summary-all.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="contabilita\agenti\expperiodo-summary-all.aspx.designer.cs">
+      <DependentUpon>expperiodo-summary-all.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="contabilita\agenti\expperiodo-summary-single.aspx.cs">
+      <DependentUpon>expperiodo-summary-single.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="contabilita\agenti\expperiodo-summary-single.aspx.designer.cs">
+      <DependentUpon>expperiodo-summary-single.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="contabilita\agenti\expperiodo-tabulati-all.aspx.cs">
+      <DependentUpon>expperiodo-tabulati-all.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="contabilita\agenti\expperiodo-tabulati-all.aspx.designer.cs">
+      <DependentUpon>expperiodo-tabulati-all.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="contabilita\agenti\expperiodo.aspx.cs">
+      <DependentUpon>expperiodo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="contabilita\agenti\expperiodo.aspx.designer.cs">
+      <DependentUpon>expperiodo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="contabilita\agenti\expreport.aspx.cs">
+      <DependentUpon>expreport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="contabilita\agenti\expreport.aspx.designer.cs">
+      <DependentUpon>expreport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="contabilita\agenti\fatture\default.aspx.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="contabilita\agenti\fatture\default.aspx.designer.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="contabilita\agenti\fatture\expdefault.aspx.cs">
+      <DependentUpon>expdefault.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="contabilita\agenti\fatture\expdefault.aspx.designer.cs">
+      <DependentUpon>expdefault.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="contabilita\agenti\fatture\expfatture.aspx.cs">
+      <DependentUpon>expfatture.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="contabilita\agenti\fatture\expfatture.aspx.designer.cs">
+      <DependentUpon>expfatture.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="contabilita\agenti\fatture\scheda.aspx.cs">
+      <DependentUpon>scheda.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="contabilita\agenti\fatture\scheda.aspx.designer.cs">
+      <DependentUpon>scheda.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="contabilita\agenti\local.master.cs">
+      <DependentUpon>local.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="contabilita\agenti\local.master.designer.cs">
+      <DependentUpon>local.master</DependentUpon>
+    </Compile>
+    <Compile Include="contabilita\agenti\periodo.aspx.cs">
+      <DependentUpon>periodo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="contabilita\agenti\periodo.aspx.designer.cs">
+      <DependentUpon>periodo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="contabilita\agenti\report.aspx.cs">
+      <DependentUpon>report.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="contabilita\agenti\report.aspx.designer.cs">
+      <DependentUpon>report.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="contabilita\callcenter\expperiodo-summary-all.aspx.cs">
+      <DependentUpon>expperiodo-summary-all.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="contabilita\callcenter\expperiodo-summary-all.aspx.designer.cs">
+      <DependentUpon>expperiodo-summary-all.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="contabilita\callcenter\expperiodo-summary-single.aspx.cs">
+      <DependentUpon>expperiodo-summary-single.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="contabilita\callcenter\expperiodo-summary-single.aspx.designer.cs">
+      <DependentUpon>expperiodo-summary-single.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="contabilita\callcenter\expperiodo-tabulati-all.aspx.cs">
+      <DependentUpon>expperiodo-tabulati-all.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="contabilita\callcenter\expperiodo-tabulati-all.aspx.designer.cs">
+      <DependentUpon>expperiodo-tabulati-all.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="contabilita\callcenter\expperiodo.aspx.cs">
+      <DependentUpon>expperiodo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="contabilita\callcenter\expperiodo.aspx.designer.cs">
+      <DependentUpon>expperiodo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="contabilita\callcenter\expreport.aspx.cs">
+      <DependentUpon>expreport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="contabilita\callcenter\expreport.aspx.designer.cs">
+      <DependentUpon>expreport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="contabilita\callcenter\fatture\default.aspx.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="contabilita\callcenter\fatture\default.aspx.designer.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="contabilita\callcenter\fatture\expdefault.aspx.cs">
+      <DependentUpon>expdefault.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="contabilita\callcenter\fatture\expdefault.aspx.designer.cs">
+      <DependentUpon>expdefault.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="contabilita\callcenter\fatture\expfatture.aspx.cs">
+      <DependentUpon>expfatture.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="contabilita\callcenter\fatture\expfatture.aspx.designer.cs">
+      <DependentUpon>expfatture.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="contabilita\callcenter\fatture\scheda.aspx.cs">
+      <DependentUpon>scheda.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="contabilita\callcenter\fatture\scheda.aspx.designer.cs">
+      <DependentUpon>scheda.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="contabilita\callcenter\local.master.cs">
+      <DependentUpon>local.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="contabilita\callcenter\local.master.designer.cs">
+      <DependentUpon>local.master</DependentUpon>
+    </Compile>
+    <Compile Include="contabilita\callcenter\periodo.aspx.cs">
+      <DependentUpon>periodo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="contabilita\callcenter\periodo.aspx.designer.cs">
+      <DependentUpon>periodo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="contabilita\callcenter\report.aspx.cs">
+      <DependentUpon>report.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="contabilita\callcenter\report.aspx.designer.cs">
+      <DependentUpon>report.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="contabilita\commerciali\expperiodo-tabulati-all.aspx.cs">
+      <DependentUpon>expperiodo-tabulati-all.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="contabilita\commerciali\expperiodo-tabulati-all.aspx.designer.cs">
+      <DependentUpon>expperiodo-tabulati-all.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="contabilita\commerciali\expperiodo.aspx.cs">
+      <DependentUpon>expperiodo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="contabilita\commerciali\expperiodo.aspx.designer.cs">
+      <DependentUpon>expperiodo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="contabilita\commerciali\expreport.aspx.cs">
+      <DependentUpon>expreport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="contabilita\commerciali\expreport.aspx.designer.cs">
+      <DependentUpon>expreport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="contabilita\commerciali\fatture\default.aspx.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="contabilita\commerciali\fatture\default.aspx.designer.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="contabilita\commerciali\fatture\expdefault.aspx.cs">
+      <DependentUpon>expdefault.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="contabilita\commerciali\fatture\expdefault.aspx.designer.cs">
+      <DependentUpon>expdefault.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="contabilita\commerciali\fatture\expfatture.aspx.cs">
+      <DependentUpon>expfatture.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="contabilita\commerciali\fatture\expfatture.aspx.designer.cs">
+      <DependentUpon>expfatture.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="contabilita\commerciali\fatture\scheda.aspx.cs">
+      <DependentUpon>scheda.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="contabilita\commerciali\fatture\scheda.aspx.designer.cs">
+      <DependentUpon>scheda.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="contabilita\commerciali\local.master.cs">
+      <DependentUpon>local.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="contabilita\commerciali\local.master.designer.cs">
+      <DependentUpon>local.master</DependentUpon>
+    </Compile>
+    <Compile Include="contabilita\commerciali\periodo.aspx.cs">
+      <DependentUpon>periodo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="contabilita\commerciali\periodo.aspx.designer.cs">
+      <DependentUpon>periodo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="contabilita\commerciali\report.aspx.cs">
+      <DependentUpon>report.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="contabilita\commerciali\report.aspx.designer.cs">
+      <DependentUpon>report.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="contabilita\home.aspx.cs">
+      <DependentUpon>home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="contabilita\home.aspx.designer.cs">
+      <DependentUpon>home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="contabilita\procuratori\expperiodo-summary-all.aspx.cs">
+      <DependentUpon>expperiodo-summary-all.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="contabilita\procuratori\expperiodo-summary-all.aspx.designer.cs">
+      <DependentUpon>expperiodo-summary-all.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="contabilita\procuratori\expperiodo-summary-single.aspx.cs">
+      <DependentUpon>expperiodo-summary-single.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="contabilita\procuratori\expperiodo-summary-single.aspx.designer.cs">
+      <DependentUpon>expperiodo-summary-single.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="contabilita\procuratori\expperiodo-tabulati-all.aspx.cs">
+      <DependentUpon>expperiodo-tabulati-all.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="contabilita\procuratori\expperiodo-tabulati-all.aspx.designer.cs">
+      <DependentUpon>expperiodo-tabulati-all.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="contabilita\procuratori\expperiodo.aspx.cs">
+      <DependentUpon>expperiodo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="contabilita\procuratori\expperiodo.aspx.designer.cs">
+      <DependentUpon>expperiodo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="contabilita\procuratori\expreport.aspx.cs">
+      <DependentUpon>expreport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="contabilita\procuratori\expreport.aspx.designer.cs">
+      <DependentUpon>expreport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="contabilita\procuratori\fatture\default.aspx.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="contabilita\procuratori\fatture\default.aspx.designer.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="contabilita\procuratori\fatture\expdefault.aspx.cs">
+      <DependentUpon>expdefault.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="contabilita\procuratori\fatture\expdefault.aspx.designer.cs">
+      <DependentUpon>expdefault.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="contabilita\procuratori\fatture\expfatture.aspx.cs">
+      <DependentUpon>expfatture.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="contabilita\procuratori\fatture\expfatture.aspx.designer.cs">
+      <DependentUpon>expfatture.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="contabilita\procuratori\fatture\scheda.aspx.cs">
+      <DependentUpon>scheda.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="contabilita\procuratori\fatture\scheda.aspx.designer.cs">
+      <DependentUpon>scheda.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="contabilita\procuratori\local.master.cs">
+      <DependentUpon>local.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="contabilita\procuratori\local.master.designer.cs">
+      <DependentUpon>local.master</DependentUpon>
+    </Compile>
+    <Compile Include="contabilita\procuratori\periodo.aspx.cs">
+      <DependentUpon>periodo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="contabilita\procuratori\periodo.aspx.designer.cs">
+      <DependentUpon>periodo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="contabilita\procuratori\report.aspx.cs">
+      <DependentUpon>report.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="contabilita\procuratori\report.aspx.designer.cs">
+      <DependentUpon>report.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="excel.aspx.cs">
+      <DependentUpon>excel.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="excel.aspx.designer.cs">
+      <DependentUpon>excel.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="header.aspx.cs">
+      <DependentUpon>header.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="header.aspx.designer.cs">
+      <DependentUpon>header.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="home.aspx.cs">
+      <DependentUpon>home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="home.aspx.designer.cs">
+      <DependentUpon>home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="legendStatusTabulato.ascx.cs">
+      <DependentUpon>legendStatusTabulato.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="legendStatusTabulato.ascx.designer.cs">
+      <DependentUpon>legendStatusTabulato.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="logout.aspx.cs">
+      <DependentUpon>logout.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="logout.aspx.designer.cs">
+      <DependentUpon>logout.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="redirectExport.aspx.cs">
+      <DependentUpon>redirectExport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="redirectExport.aspx.designer.cs">
+      <DependentUpon>redirectExport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="redirectView.aspx.cs">
+      <DependentUpon>redirectView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="redirectView.aspx.designer.cs">
+      <DependentUpon>redirectView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="settings\ag-ctr\default.aspx.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="settings\ag-ctr\default.aspx.designer.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="settings\ag-ctr\local.master.cs">
+      <DependentUpon>local.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="settings\ag-ctr\local.master.designer.cs">
+      <DependentUpon>local.master</DependentUpon>
+    </Compile>
+    <Compile Include="settings\ag-ctr\scheda.aspx.cs">
+      <DependentUpon>scheda.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="settings\ag-ctr\scheda.aspx.designer.cs">
+      <DependentUpon>scheda.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="settings\bc-cm\default.aspx.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="settings\bc-cm\default.aspx.designer.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="settings\bc-cm\local.master.cs">
+      <DependentUpon>local.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="settings\bc-cm\local.master.designer.cs">
+      <DependentUpon>local.master</DependentUpon>
+    </Compile>
+    <Compile Include="settings\bc-cm\scheda.aspx.cs">
+      <DependentUpon>scheda.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="settings\bc-cm\scheda.aspx.designer.cs">
+      <DependentUpon>scheda.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="settings\bc-cs-maxmese\default.aspx.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="settings\bc-cs-maxmese\default.aspx.designer.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="settings\bc-cs-maxmese\local.master.cs">
+      <DependentUpon>local.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="settings\bc-cs-maxmese\local.master.designer.cs">
+      <DependentUpon>local.master</DependentUpon>
+    </Compile>
+    <Compile Include="settings\bc-cs-maxmese\scheda.aspx.cs">
+      <DependentUpon>scheda.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="settings\bc-cs-maxmese\scheda.aspx.designer.cs">
+      <DependentUpon>scheda.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="settings\bc-cs\default.aspx.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="settings\bc-cs\default.aspx.designer.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="settings\bc-cs\local.master.cs">
+      <DependentUpon>local.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="settings\bc-cs\local.master.designer.cs">
+      <DependentUpon>local.master</DependentUpon>
+    </Compile>
+    <Compile Include="settings\bc-cs\scheda.aspx.cs">
+      <DependentUpon>scheda.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="settings\bc-cs\scheda.aspx.designer.cs">
+      <DependentUpon>scheda.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="settings\bsl-cg\default.aspx.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="settings\bsl-cg\default.aspx.designer.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="settings\bsl-cg\local.master.cs">
+      <DependentUpon>local.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="settings\bsl-cg\local.master.designer.cs">
+      <DependentUpon>local.master</DependentUpon>
+    </Compile>
+    <Compile Include="settings\bsl-cg\scheda.aspx.cs">
+      <DependentUpon>scheda.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="settings\bsl-cg\scheda.aspx.designer.cs">
+      <DependentUpon>scheda.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="settings\bsl-cm\default.aspx.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="settings\bsl-cm\default.aspx.designer.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="settings\bsl-cm\local.master.cs">
+      <DependentUpon>local.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="settings\bsl-cm\local.master.designer.cs">
+      <DependentUpon>local.master</DependentUpon>
+    </Compile>
+    <Compile Include="settings\bsl-cm\scheda.aspx.cs">
+      <DependentUpon>scheda.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="settings\bsl-cm\scheda.aspx.designer.cs">
+      <DependentUpon>scheda.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="settings\callcenter\default.aspx.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="settings\callcenter\default.aspx.designer.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="settings\callcenter\local.master.cs">
+      <DependentUpon>local.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="settings\callcenter\local.master.designer.cs">
+      <DependentUpon>local.master</DependentUpon>
+    </Compile>
+    <Compile Include="settings\callcenter\scheda.aspx.cs">
+      <DependentUpon>scheda.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="settings\callcenter\scheda.aspx.designer.cs">
+      <DependentUpon>scheda.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Site.Master.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site.Master.designer.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
+    <Compile Include="siteClear.Master.cs">
+      <DependentUpon>siteClear.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="siteClear.Master.designer.cs">
+      <DependentUpon>siteClear.Master</DependentUpon>
+    </Compile>
+    <Compile Include="SiteContabilita.Master.cs">
+      <DependentUpon>SiteContabilita.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SiteContabilita.Master.designer.cs">
+      <DependentUpon>SiteContabilita.Master</DependentUpon>
+    </Compile>
+    <Compile Include="siteExport.Master.cs">
+      <DependentUpon>siteExport.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="siteExport.Master.designer.cs">
+      <DependentUpon>siteExport.Master</DependentUpon>
+    </Compile>
+    <Compile Include="SiteUffPersonale.Master.cs">
+      <DependentUpon>SiteUffPersonale.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SiteUffPersonale.Master.designer.cs">
+      <DependentUpon>SiteUffPersonale.Master</DependentUpon>
+    </Compile>
+    <Compile Include="SiteCallCenter.Master.cs">
+      <DependentUpon>SiteCallCenter.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SiteCallCenter.Master.designer.cs">
+      <DependentUpon>SiteCallCenter.Master</DependentUpon>
+    </Compile>
+    <Compile Include="SiteCommerciale.Master.cs">
+      <DependentUpon>SiteCommerciale.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SiteCommerciale.Master.designer.cs">
+      <DependentUpon>SiteCommerciale.Master</DependentUpon>
+    </Compile>
+    <Compile Include="SiteAgente.Master.cs">
+      <DependentUpon>SiteAgente.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SiteAgente.Master.designer.cs">
+      <DependentUpon>SiteAgente.Master</DependentUpon>
+    </Compile>
+    <Compile Include="system.cs" />
+    <Compile Include="login.aspx.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="login.aspx.designer.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="legendStatusFattura.ascx.cs">
+      <DependentUpon>legendStatusFattura.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="legendStatusFattura.ascx.designer.cs">
+      <DependentUpon>legendStatusFattura.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="end.aspx.cs">
+      <DependentUpon>end.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="end.aspx.designer.cs">
+      <DependentUpon>end.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="default.aspx.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="default.aspx.designer.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="tabulati\agenti\bc\dettaglio.aspx.cs">
+      <DependentUpon>dettaglio.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="tabulati\agenti\bc\dettaglio.aspx.designer.cs">
+      <DependentUpon>dettaglio.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="tabulati\agenti\bc\dettaglioWeek.aspx.cs">
+      <DependentUpon>dettaglioWeek.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="tabulati\agenti\bc\dettaglioWeek.aspx.designer.cs">
+      <DependentUpon>dettaglioWeek.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="tabulati\agenti\bc\expdettaglio.aspx.cs">
+      <DependentUpon>expdettaglio.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="tabulati\agenti\bc\expdettaglio.aspx.designer.cs">
+      <DependentUpon>expdettaglio.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="tabulati\agenti\bc\expdettaglioWeek.aspx.cs">
+      <DependentUpon>expdettaglioWeek.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="tabulati\agenti\bc\expdettaglioWeek.aspx.designer.cs">
+      <DependentUpon>expdettaglioWeek.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="tabulati\agenti\bc\expreport.aspx.cs">
+      <DependentUpon>expreport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="tabulati\agenti\bc\expreport.aspx.designer.cs">
+      <DependentUpon>expreport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="tabulati\agenti\bc\local.master.cs">
+      <DependentUpon>local.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="tabulati\agenti\bc\local.master.designer.cs">
+      <DependentUpon>local.master</DependentUpon>
+    </Compile>
+    <Compile Include="tabulati\agenti\bc\report.aspx.cs">
+      <DependentUpon>report.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="tabulati\agenti\bc\report.aspx.designer.cs">
+      <DependentUpon>report.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="tabulati\agenti\be\expreport.aspx.cs">
+      <DependentUpon>expreport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="tabulati\agenti\be\expreport.aspx.designer.cs">
+      <DependentUpon>expreport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="tabulati\agenti\be\local.master.cs">
+      <DependentUpon>local.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="tabulati\agenti\be\local.master.designer.cs">
+      <DependentUpon>local.master</DependentUpon>
+    </Compile>
+    <Compile Include="tabulati\agenti\be\localUffPers.master.cs">
+      <DependentUpon>localUffPers.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="tabulati\agenti\be\localUffPers.master.designer.cs">
+      <DependentUpon>localUffPers.master</DependentUpon>
+    </Compile>
+    <Compile Include="tabulati\agenti\be\report.aspx.cs">
+      <DependentUpon>report.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="tabulati\agenti\be\report.aspx.designer.cs">
+      <DependentUpon>report.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="tabulati\agenti\be\scheda.aspx.cs">
+      <DependentUpon>scheda.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="tabulati\agenti\be\scheda.aspx.designer.cs">
+      <DependentUpon>scheda.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="tabulati\agenti\bslintegr\expreport.aspx.cs">
+      <DependentUpon>expreport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="tabulati\agenti\bslintegr\expreport.aspx.designer.cs">
+      <DependentUpon>expreport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="tabulati\agenti\bslintegr\local.master.cs">
+      <DependentUpon>local.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="tabulati\agenti\bslintegr\local.master.designer.cs">
+      <DependentUpon>local.master</DependentUpon>
+    </Compile>
+    <Compile Include="tabulati\agenti\bslintegr\localUffPers.master.cs">
+      <DependentUpon>localUffPers.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="tabulati\agenti\bslintegr\localUffPers.master.designer.cs">
+      <DependentUpon>localUffPers.master</DependentUpon>
+    </Compile>
+    <Compile Include="tabulati\agenti\bslintegr\report.aspx.cs">
+      <DependentUpon>report.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="tabulati\agenti\bslintegr\report.aspx.designer.cs">
+      <DependentUpon>report.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="tabulati\agenti\bslintegr\scheda.aspx.cs">
+      <DependentUpon>scheda.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="tabulati\agenti\bslintegr\scheda.aspx.designer.cs">
+      <DependentUpon>scheda.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="tabulati\agenti\bslorestraord\local.master.cs">
+      <DependentUpon>local.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="tabulati\agenti\bslorestraord\local.master.designer.cs">
+      <DependentUpon>local.master</DependentUpon>
+    </Compile>
+    <Compile Include="tabulati\agenti\bslorestraord\localUffPers.master.cs">
+      <DependentUpon>localUffPers.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="tabulati\agenti\bslorestraord\localUffPers.master.designer.cs">
+      <DependentUpon>localUffPers.master</DependentUpon>
+    </Compile>
+    <Compile Include="tabulati\agenti\bslorestraord\report.aspx.cs">
+      <DependentUpon>report.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="tabulati\agenti\bslorestraord\report.aspx.designer.cs">
+      <DependentUpon>report.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="tabulati\agenti\bsl\expreport.aspx.cs">
+      <DependentUpon>expreport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="tabulati\agenti\bsl\expreport.aspx.designer.cs">
+      <DependentUpon>expreport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="tabulati\agenti\bsl\local.master.cs">
+      <DependentUpon>local.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="tabulati\agenti\bsl\local.master.designer.cs">
+      <DependentUpon>local.master</DependentUpon>
+    </Compile>
+    <Compile Include="tabulati\agenti\bsl\localUffPers.master.cs">
+      <DependentUpon>localUffPers.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="tabulati\agenti\bsl\localUffPers.master.designer.cs">
+      <DependentUpon>localUffPers.master</DependentUpon>
+    </Compile>
+    <Compile Include="tabulati\agenti\bsl\report.aspx.cs">
+      <DependentUpon>report.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="tabulati\agenti\bsl\report.aspx.designer.cs">
+      <DependentUpon>report.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="tabulati\agenti\ccrequestreport.aspx.cs">
+      <DependentUpon>ccrequestreport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="tabulati\agenti\ccrequestreport.aspx.designer.cs">
+      <DependentUpon>ccrequestreport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="tabulati\agenti\corrispettivi\dettaglio.aspx.cs">
+      <DependentUpon>dettaglio.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="tabulati\agenti\corrispettivi\dettaglio.aspx.designer.cs">
+      <DependentUpon>dettaglio.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="tabulati\agenti\corrispettivi\expdettaglio.aspx.cs">
+      <DependentUpon>expdettaglio.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="tabulati\agenti\corrispettivi\expdettaglio.aspx.designer.cs">
+      <DependentUpon>expdettaglio.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="tabulati\agenti\corrispettivi\expdettaglio2.aspx.cs">
+      <DependentUpon>expdettaglio2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="tabulati\agenti\corrispettivi\expdettaglio2.aspx.designer.cs">
+      <DependentUpon>expdettaglio2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="tabulati\agenti\corrispettivi\expreport.aspx.cs">
+      <DependentUpon>expreport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="tabulati\agenti\corrispettivi\expreport.aspx.designer.cs">
+      <DependentUpon>expreport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="tabulati\agenti\corrispettivi\local.master.cs">
+      <DependentUpon>local.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="tabulati\agenti\corrispettivi\local.master.designer.cs">
+      <DependentUpon>local.master</DependentUpon>
+    </Compile>
+    <Compile Include="tabulati\agenti\corrispettivi\report.aspx.cs">
+      <DependentUpon>report.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="tabulati\agenti\corrispettivi\report.aspx.designer.cs">
+      <DependentUpon>report.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="tabulati\agenti\finemese\expreport.aspx.cs">
+      <DependentUpon>expreport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="tabulati\agenti\finemese\expreport.aspx.designer.cs">
+      <DependentUpon>expreport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="tabulati\agenti\finemese\local.master.cs">
+      <DependentUpon>local.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="tabulati\agenti\finemese\local.master.designer.cs">
+      <DependentUpon>local.master</DependentUpon>
+    </Compile>
+    <Compile Include="tabulati\agenti\finemese\report.aspx.cs">
+      <DependentUpon>report.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="tabulati\agenti\finemese\report.aspx.designer.cs">
+      <DependentUpon>report.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="tabulati\agenti\infoAgente.ascx.cs">
+      <DependentUpon>infoAgente.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="tabulati\agenti\infoAgente.ascx.designer.cs">
+      <DependentUpon>infoAgente.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="tabulati\agenti\integrazioni\dettaglio.aspx.cs">
+      <DependentUpon>dettaglio.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="tabulati\agenti\integrazioni\dettaglio.aspx.designer.cs">
+      <DependentUpon>dettaglio.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="tabulati\agenti\integrazioni\expdettaglio.aspx.cs">
+      <DependentUpon>expdettaglio.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="tabulati\agenti\integrazioni\expdettaglio.aspx.designer.cs">
+      <DependentUpon>expdettaglio.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="tabulati\agenti\integrazioni\expreport.aspx.cs">
+      <DependentUpon>expreport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="tabulati\agenti\integrazioni\expreport.aspx.designer.cs">
+      <DependentUpon>expreport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="tabulati\agenti\integrazioni\local.master.cs">
+      <DependentUpon>local.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="tabulati\agenti\integrazioni\local.master.designer.cs">
+      <DependentUpon>local.master</DependentUpon>
+    </Compile>
+    <Compile Include="tabulati\agenti\integrazioni\report.aspx.cs">
+      <DependentUpon>report.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="tabulati\agenti\integrazioni\report.aspx.designer.cs">
+      <DependentUpon>report.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="tabulati\agenti\manuale\local.master.cs">
+      <DependentUpon>local.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="tabulati\agenti\manuale\local.master.designer.cs">
+      <DependentUpon>local.master</DependentUpon>
+    </Compile>
+    <Compile Include="tabulati\agenti\manuale\scheda.aspx.cs">
+      <DependentUpon>scheda.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="tabulati\agenti\manuale\scheda.aspx.designer.cs">
+      <DependentUpon>scheda.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="tabulati\agenti\premi\dettaglio.aspx.cs">
+      <DependentUpon>dettaglio.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="tabulati\agenti\premi\dettaglio.aspx.designer.cs">
+      <DependentUpon>dettaglio.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="tabulati\agenti\premi\expdettaglio.aspx.cs">
+      <DependentUpon>expdettaglio.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="tabulati\agenti\premi\expdettaglio.aspx.designer.cs">
+      <DependentUpon>expdettaglio.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="tabulati\agenti\premi\expreport.aspx.cs">
+      <DependentUpon>expreport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="tabulati\agenti\premi\expreport.aspx.designer.cs">
+      <DependentUpon>expreport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="tabulati\agenti\premi\local.master.cs">
+      <DependentUpon>local.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="tabulati\agenti\premi\local.master.designer.cs">
+      <DependentUpon>local.master</DependentUpon>
+    </Compile>
+    <Compile Include="tabulati\agenti\premi\report.aspx.cs">
+      <DependentUpon>report.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="tabulati\agenti\premi\report.aspx.designer.cs">
+      <DependentUpon>report.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="tabulati\agenti\unificato\expreport.aspx.cs">
+      <DependentUpon>expreport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="tabulati\agenti\unificato\expreport.aspx.designer.cs">
+      <DependentUpon>expreport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="tabulati\agenti\unificato\local.master.cs">
+      <DependentUpon>local.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="tabulati\agenti\unificato\local.master.designer.cs">
+      <DependentUpon>local.master</DependentUpon>
+    </Compile>
+    <Compile Include="tabulati\agenti\unificato\report.aspx.cs">
+      <DependentUpon>report.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="tabulati\agenti\unificato\report.aspx.designer.cs">
+      <DependentUpon>report.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="tabulati\commerciali\corrispettivi\dettaglio.aspx.cs">
+      <DependentUpon>dettaglio.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="tabulati\commerciali\corrispettivi\dettaglio.aspx.designer.cs">
+      <DependentUpon>dettaglio.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="tabulati\commerciali\corrispettivi\expdettaglio.aspx.cs">
+      <DependentUpon>expdettaglio.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="tabulati\commerciali\corrispettivi\expdettaglio.aspx.designer.cs">
+      <DependentUpon>expdettaglio.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="tabulati\commerciali\corrispettivi\expreport.aspx.cs">
+      <DependentUpon>expreport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="tabulati\commerciali\corrispettivi\expreport.aspx.designer.cs">
+      <DependentUpon>expreport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="tabulati\commerciali\corrispettivi\local.master.cs">
+      <DependentUpon>local.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="tabulati\commerciali\corrispettivi\local.master.designer.cs">
+      <DependentUpon>local.master</DependentUpon>
+    </Compile>
+    <Compile Include="tabulati\commerciali\corrispettivi\report.aspx.cs">
+      <DependentUpon>report.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="tabulati\commerciali\corrispettivi\report.aspx.designer.cs">
+      <DependentUpon>report.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="uffpersonale\expperiodo-summary-all.aspx.cs">
+      <DependentUpon>expperiodo-summary-all.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="uffpersonale\expperiodo-summary-all.aspx.designer.cs">
+      <DependentUpon>expperiodo-summary-all.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="uffpersonale\expperiodo-tabulati-all.aspx.cs">
+      <DependentUpon>expperiodo-tabulati-all.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="uffpersonale\expperiodo-tabulati-all.aspx.designer.cs">
+      <DependentUpon>expperiodo-tabulati-all.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="uffpersonale\expperiodo.aspx.cs">
+      <DependentUpon>expperiodo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="uffpersonale\expperiodo.aspx.designer.cs">
+      <DependentUpon>expperiodo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="uffpersonale\expperiodo2.aspx.cs">
+      <DependentUpon>expperiodo2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="uffpersonale\expperiodo2.aspx.designer.cs">
+      <DependentUpon>expperiodo2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="uffpersonale\home.aspx.cs">
+      <DependentUpon>home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="uffpersonale\home.aspx.designer.cs">
+      <DependentUpon>home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="uffpersonale\local.master.cs">
+      <DependentUpon>local.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="uffpersonale\local.master.designer.cs">
+      <DependentUpon>local.master</DependentUpon>
+    </Compile>
+    <Compile Include="uffpersonale\periodo.aspx.cs">
+      <DependentUpon>periodo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="uffpersonale\periodo.aspx.designer.cs">
+      <DependentUpon>periodo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="uffpersonale\report.aspx.cs">
+      <DependentUpon>report.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="uffpersonale\report.aspx.designer.cs">
+      <DependentUpon>report.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="doc\Corrispettivi - Manuale per agenti.pdf" />
+    <Content Include="doc\Corrispettivi - Manuale per call center.pdf" />
+    <Content Include="doc\Corrispettivi - Manuale per commerciali.pdf" />
+    <Content Include="doc\Corrispettivi - Manuale per ufficio contabilità.pdf" />
+    <Content Include="doc\Corrispettivi - Manuale per ufficio del personale.pdf" />
+    <None Include="packages.config" />
+    <Content Include="SiteAgente.Master" />
+    <Content Include="SiteCallCenter.Master" />
+    <Content Include="SiteCommerciale.Master" />
+    <Content Include="SiteContabilita.Master" />
+    <Content Include="SiteUffPersonale.Master" />
+    <Content Include="styles\font---.css.exclude" />
+    <Content Include="styles\Site---.css.exclude" />
+    <Content Include="uffpersonale\local.master" />
+    <Content Include="settings\ag-ctr\local.master" />
+    <Content Include="settings\bc-cm\local.master" />
+    <Content Include="settings\bc-cs\local.master" />
+    <Content Include="settings\bc-cs-maxmese\local.master" />
+    <Content Include="settings\bsl-cg\local.master" />
+    <Content Include="settings\bsl-cm\local.master" />
+    <Content Include="settings\callcenter\local.master" />
+    <Content Include="tabulati\commerciali\corrispettivi\local.master" />
+    <Content Include="tabulati\agenti\bc\local.master" />
+    <Content Include="tabulati\agenti\be\local.master" />
+    <Content Include="tabulati\agenti\be\localUffPers.master" />
+    <Content Include="tabulati\agenti\bsl\local.master" />
+    <Content Include="tabulati\agenti\bsl\localUffPers.master" />
+    <Content Include="tabulati\agenti\bslintegr\local.master" />
+    <Content Include="tabulati\agenti\bslintegr\localUffPers.master" />
+    <Content Include="tabulati\agenti\bslorestraord\local.master" />
+    <Content Include="tabulati\agenti\bslorestraord\localUffPers.master" />
+    <Content Include="tabulati\agenti\corrispettivi\local.master" />
+    <Content Include="tabulati\agenti\finemese\local.master" />
+    <Content Include="tabulati\agenti\integrazioni\local.master" />
+    <Content Include="tabulati\agenti\manuale\local.master" />
+    <Content Include="tabulati\agenti\premi\local.master" />
+    <Content Include="tabulati\agenti\unificato\local.master" />
+    <Content Include="siteExport.Master" />
+    <Content Include="siteClear.Master" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Authorize.Project\Developer\Authorize.Based\Authorize.Based.csproj">
+      <Project>{e2c821e6-6576-44a9-82fc-9fa2b9d1be22}</Project>
+      <Name>Authorize.Based</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Utility.Project\Developer\Utility.Library\Utility.Library.csproj">
+      <Project>{34840bfd-ddbc-4596-8cc9-11c46396be1c}</Project>
+      <Name>Utility.Library</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\corrispettivi.library\Corrispettivi.LIbrary.csproj">
+      <Project>{c9005e2f-47fe-418d-a793-0937b4861cec}</Project>
+      <Name>Corrispettivi.LIbrary</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>58042</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44395/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>Questo progetto fa riferimento a uno o più pacchetti NuGet che non sono presenti in questo computer. Usare lo strumento di ripristino dei pacchetti NuGet per scaricarli. Per altre informazioni, vedere http://go.microsoft.com/fwlink/?LinkID=322105. Il file mancante è {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

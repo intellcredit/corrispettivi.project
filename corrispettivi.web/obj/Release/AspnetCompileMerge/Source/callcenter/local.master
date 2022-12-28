@@ -1,0 +1,8 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/SiteCallCenter.Master" AutoEventWireup="true" CodeBehind="local.master.cs" Inherits="corrispettivi.web.callcenter.local" %>
+<%@ Register assembly="Telerik.Web.UI" namespace="Telerik.Web.UI" tagprefix="telerik" %>
+<asp:Content ID="localHead" ContentPlaceHolderID="masterHead" Runat="Server">
+    <asp:ContentPlaceHolder id="cphHeader" runat="server" />
+</asp:Content>
+<asp:Content ID="localMain" ContentPlaceHolderID="masterMain" Runat="Server">
+    <asp:ContentPlaceHolder id="cphMain" runat="server" />
+</asp:Content>

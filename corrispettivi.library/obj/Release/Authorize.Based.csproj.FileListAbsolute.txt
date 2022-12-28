@@ -1,0 +1,10 @@
+C:\DEV.NET2019\Authorize.Project\Developer\Authorize.Based\bin\Release\Authorize.Based.dll
+C:\DEV.NET2019\Authorize.Project\Developer\Authorize.Based\bin\Release\Authorize.Based.pdb
+C:\DEV.NET2019\Authorize.Project\Developer\Authorize.Based\bin\Release\it.tools.library.dll
+C:\DEV.NET2019\Authorize.Project\Developer\Authorize.Based\bin\Release\Newtonsoft.Json.dll
+C:\DEV.NET2019\Authorize.Project\Developer\Authorize.Based\bin\Release\Newtonsoft.Json.xml
+C:\DEV.NET2019\Authorize.Project\Developer\Authorize.Based\obj\Release\Authorize.Based.csprojAssemblyReference.cache
+C:\DEV.NET2019\Authorize.Project\Developer\Authorize.Based\obj\Release\Authorize.Based.csproj.CoreCompileInputs.cache
+C:\DEV.NET2019\Authorize.Project\Developer\Authorize.Based\obj\Release\Authorize.Based.csproj.CopyComplete
+C:\DEV.NET2019\Authorize.Project\Developer\Authorize.Based\obj\Release\Authorize.Based.dll
+C:\DEV.NET2019\Authorize.Project\Developer\Authorize.Based\obj\Release\Authorize.Based.pdb

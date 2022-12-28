@@ -1,0 +1,87 @@
+﻿#MessageError       {border:1px solid #FFD1B0; padding:3px; margin:3px 0; background:#FEF7D8; width:99%; color: #CC0000; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 10pt;}
+#MessageInfo        {border:1px solid darkblue; padding:3px; margin:3px 0; background:#FEF7D8; width:99%; color: darkblue; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 10pt;}
+#MessageInfo2       {border:1px solid darkblue; padding:1px; margin:1px 0; background:#FEF7D8; width:99%; color: darkblue; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 10pt;}
+#MessageLicenze     {border:1px solid #FFD1B0; padding:3px; margin:3px 0; background:#ffccff; width:99%; color: #CC0000; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 20pt; font-weight: bold; }
+#MessageExclamation {border:1px solid red; padding:3px; margin:3px 0; background:white; width:99%; color: red; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 10pt;}
+#MessageSaved       {border:1px solid black; padding:3px; margin:3px 0; background:#00FF7F; width:99%; color: black; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 10pt;}
+
+.testonero7 {  font-family: Calibri, Verdana, Arial, Helvetica, sans-serif; font-size: 7pt; color: #000000 }
+.testonero8 {  font-family: Calibri, Verdana, Arial, Helvetica, sans-serif; font-size: 8pt; color: #000000 }
+.testonero9 {  font-family: Calibri, Verdana, Arial, Helvetica, sans-serif; font-size: 9pt; color: #000000 }
+.testonero10 { font-family: Calibri, Verdana, Arial, Helvetica, sans-serif; font-size: 10pt; color: #000000 }
+.testonero12 {  font-family: Calibri, Verdana, Arial, Helvetica, sans-serif; font-size: 12pt; color: #000000 }
+.testonero14 {  font-family: Calibri, Verdana, Arial, Helvetica, sans-serif; font-size: 14pt; color: #000000 }
+.testonero16 {  font-family: Calibri, Verdana, Arial, Helvetica, sans-serif; font-size: 16pt; color: #000000 }
+.testonero18 {  font-family: Calibri, Verdana, Arial, Helvetica, sans-serif; font-size: 18pt; color: #000000 }
+
+.textbox { font-family: Calibri, Verdana, Arial, Helvetica, sans-serif; font-size: 10pt}
+
+.testorosso8 {  font-family: Calibri, Verdana, Arial, Helvetica, sans-serif; font-size: 8pt; color: #990000 }
+.testorosso10 {  font-family: Calibri, Verdana, Arial, Helvetica, sans-serif; font-size: 10pt; color: #990000 }
+.testorosso12 {  font-family: Calibri, Verdana, Arial, Helvetica, sans-serif; font-size: 12pt; color: #990000 }
+
+.testobianco8 {  font-family: Calibri, Verdana, Arial, Helvetica, sans-serif; font-size: 8pt; color: #ffffff }
+.testobianco10 {  font-family: Calibri, Verdana, Arial, Helvetica, sans-serif; font-size: 10pt; color: #ffffff }
+
+.testoblu8 {  font-family: Calibri, Verdana, Arial, Helvetica, sans-serif; font-size: 8pt; color: darkblue }
+.testoblu10 {  font-family: Calibri, Verdana, Arial, Helvetica, sans-serif; font-size: 10pt; color: darkblue }
+
+.titnero6 { font-weight: bold; font-size: 6pt; font-family: Calibri, Verdana, Geneva, Arial, Helvetica, sans-serif; color: #000000 }
+.titnero8 { font-weight: bold; font-size: 8pt; font-family: Calibri, Verdana, Geneva, Arial, Helvetica, sans-serif; color: #000000 }
+.titnero9 { font-weight: bold; font-size: 9pt; font-family: Calibri, Verdana, Geneva, Arial, Helvetica, sans-serif; color: #000000 }
+.titnero10 { font-weight: bold; font-size: 10pt; font-family: Calibri, Verdana, Geneva, Arial, Helvetica, sans-serif; color: #000000 }
+.titnero11 { font-weight: bold; font-size: 11pt; font-family: Calibri, Verdana, Geneva, Arial, Helvetica, sans-serif; color: #000000 }
+.titnero12 { font-weight: bold; font-size: 12pt; font-family: Calibri, Verdana, Geneva, Arial, Helvetica, sans-serif; color: #000000 }
+.titnero14 { font-weight: bold; font-size: 14pt; font-family: Calibri, Verdana, Geneva, Arial, Helvetica, sans-serif; color: #000000 }
+
+.titrosso6 { font-weight: bold; font-size: 6pt; font-family: Calibri, Verdana, Geneva, Arial, Helvetica, sans-serif; color: #990000 }
+.titrosso7 { font-weight: bold; font-size: 7pt; font-family: Calibri, Verdana, Geneva, Arial, Helvetica, sans-serif; color: #990000 }
+.titrosso8 { font-weight: bold; font-size: 8pt; font-family: Calibri, Verdana, Geneva, Arial, Helvetica, sans-serif; color: #990000 }
+.titrosso10 { font-weight: bold; font-size: 10pt; font-family: Calibri, Verdana, Geneva, Arial, Helvetica, sans-serif; color: #990000 }
+.titrosso12 { font-weight: bold; font-size: 12pt; font-family: Calibri, Verdana, Geneva, Arial, Helvetica, sans-serif; color: #990000 }
+.titrosso14 { font-weight: bold; font-size: 14pt; font-family: Calibri, Verdana, Geneva, Arial, Helvetica, sans-serif; color: #990000 }
+.titrosso16 { font-weight: bold; font-size: 16pt; font-family: Calibri, Verdana, Geneva, Arial, Helvetica, sans-serif; color: #990000 }
+.titrosso18 { font-weight: bold; font-size: 18pt; font-family: Calibri, Verdana, Geneva, Arial, Helvetica, sans-serif; color: #990000 }
+
+.titrossolight8  { font-weight: bold; font-size: 8pt;  font-family: Calibri, Verdana, Geneva, Arial, Helvetica, sans-serif; color: #D48A99  }
+.titrossolight10 { font-weight: bold; font-size: 10pt; font-family: Calibri, Verdana, Geneva, Arial, Helvetica, sans-serif; color: #D48A99  }
+.titrossolight12 { font-weight: bold; font-size: 12pt; font-family: Calibri, Verdana, Geneva, Arial, Helvetica, sans-serif; color: #D48A99  }
+
+.titblulight8  { font-weight: bold; font-size: 8pt;  font-family: Calibri, Verdana, Geneva, Arial, Helvetica, sans-serif; color: #7E9FB6 }
+.titblulight10 { font-weight: bold; font-size: 10pt; font-family: Calibri, Verdana, Geneva, Arial, Helvetica, sans-serif; color: #7E9FB6 }
+.titblulight12 { font-weight: bold; font-size: 12pt; font-family: Calibri, Verdana, Geneva, Arial, Helvetica, sans-serif; color: #7E9FB6 }
+
+.titbianco8 { font-weight: bold; font-size: 8pt; font-family: Calibri, Verdana, Geneva, Arial, Helvetica, sans-serif; color: #ffffff }
+.titbianco10 { font-weight: bold; font-size: 10pt; font-family: Calibri, Verdana, Geneva, Arial, Helvetica, sans-serif; color: #ffffff }
+.titbianco12 { font-weight: bold; font-size: 12pt; font-family: Calibri, Verdana, Geneva, Arial, Helvetica, sans-serif; color: #ffffff }
+
+.titblu8 {font-weight: bold; font-size: 8pt; font-family: Calibri, Verdana, Geneva, Arial, Helvetica, sans-serif; color: darkblue }
+.titblu10 { font-weight: bold; font-size: 10pt; font-family: Calibri, Verdana, Geneva, Arial, Helvetica, sans-serif; color: darkblue }
+.titblu12 { font-weight: bold; font-size: 12pt; font-family: Calibri, Verdana, Geneva, Arial, Helvetica, sans-serif; color: darkblue }
+
+.corsnero8 { font-style:oblique; font-family: Calibri, Verdana, Arial, Helvetica, sans-serif; font-size: 8pt; color: #000000 }
+.corsnero9 { font-style:oblique; font-family: Calibri, Verdana, Arial, Helvetica, sans-serif; font-size: 9pt; color: #000000 }
+.corsnero10 { font-style:oblique; font-family: Calibri, Verdana, Arial, Helvetica, sans-serif; font-size: 10pt; color: #000000 }
+
+.titcorsnero8 { font-weight: bold; font-style:oblique; font-family: Calibri, Verdana, Arial, Helvetica, sans-serif; font-size: 8pt; color: #000000 }
+.titcorsnero9 { font-weight: bold; font-style:oblique; font-family: Calibri, Verdana, Arial, Helvetica, sans-serif; font-size: 9pt; color: #000000 }
+.titcorsnero10 { font-weight: bold; font-style:oblique; font-family: Calibri, Verdana, Arial, Helvetica, sans-serif; font-size: 10pt; color: #000000 }
+
+.corstestoblu8 { font-style:oblique;  font-family: Calibri, Verdana, Arial, Helvetica, sans-serif; font-size: 8pt; color: darkblue }
+.corstestoblu9 { font-style:oblique;  font-family: Calibri, Verdana, Arial, Helvetica, sans-serif; font-size: 9pt; color: darkblue }
+.corstestoblu10 { font-style:oblique;  font-family: Calibri, Verdana, Arial, Helvetica, sans-serif; font-size: 10pt; color: darkblue }
+
+.titcorsblu8 { font-weight: bold; font-style:oblique; font-family: Calibri, Verdana, Arial, Helvetica, sans-serif; font-size: 8pt; color: darkblue }
+.titcorsblu9 { font-weight: bold; font-style:oblique; font-family: Calibri, Verdana, Arial, Helvetica, sans-serif; font-size: 9pt; color: darkblue }
+.titcorsblu10 { font-weight: bold; font-style:oblique; font-family: Calibri, Verdana, Arial, Helvetica, sans-serif; font-size: 10pt; color: darkblue }
+
+.titverde8 { font-weight: bold; font-size: 8pt; font-family: Calibri, Verdana, Geneva, Arial, Helvetica, sans-serif; color: #CCFF00 }
+.titverde10 { font-weight: bold; font-size: 10pt; font-family: Calibri, Verdana, Geneva, Arial, Helvetica, sans-serif; color: #CCFF00 }
+.titverde12 { font-weight: bold; font-size: 12pt; font-family: Calibri, Verdana, Geneva, Arial, Helvetica, sans-serif; color: #CCFF00 }
+
+.titgiallo8 { font-weight: bold; font-size: 8pt; font-family: Calibri, Verdana, Geneva, Arial, Helvetica, sans-serif; color: #FFFF66 }
+.titgiallo10 { font-weight: bold; font-size: 10pt; font-family: Calibri, Verdana, Geneva, Arial, Helvetica, sans-serif; color: #FFFF66 }
+.titgiallo12 { font-weight: bold; font-size: 12pt; font-family: Calibri, Verdana, Geneva, Arial, Helvetica, sans-serif; color: #FFFF66 }
+
+
+.spazio { word-spacing: 20px; }
