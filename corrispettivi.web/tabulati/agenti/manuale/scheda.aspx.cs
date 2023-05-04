@@ -4,10 +4,12 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using System.Threading;
 
 using Telerik.Web.UI;
 using Corrispettivi.Library;
 using it.tools.library;
+
 
 namespace corrispettivi.web.tabulati.agenti.manuale
 {
@@ -23,15 +25,20 @@ namespace corrispettivi.web.tabulati.agenti.manuale
         {
             //sep1.Visible = false;
             //tbAction.Visible = false;
+            tbAction.FindItemByValue("btnRefresh").Visible = false;
         }
 
         protected void cmbPeriodoRif_SelectedIndexChanged(object sender, RadComboBoxSelectedIndexChangedEventArgs e)
         {
+            lblMessage.Text = "";
+            tbAction.FindItemByValue("btnRefresh").Visible = false;
             search();
         }
 
         protected void cmbAgenteGroupID_SelectedIndexChanged(object sender, RadComboBoxSelectedIndexChangedEventArgs e)
         {
+            lblMessage.Text = "";
+            tbAction.FindItemByValue("btnRefresh").Visible = false;
             search();
         }
 
@@ -55,40 +62,62 @@ namespace corrispettivi.web.tabulati.agenti.manuale
                 {
                     lblActionMessage.Text = "Elaborazione bonus contatti in corso...";
                     result = AgentiBc.ManualSingleElab(id, periodorif);
+                    Thread.Sleep(100);
+                    if (!CheckResult(result)) return;
 
                     lblActionMessage.Text = "Elaborazione corrispettivi in corso...";
                     result = AgentiCorrispettivi.ManualSingleElab(id, periodorif);
+                    Thread.Sleep(100);
+                    if (!CheckResult(result)) return;
 
                     lblActionMessage.Text = "Elaborazione premi in corso ...";
                     result = AgentiPremi.ManualSingleElab(id, periodorif);
+                    Thread.Sleep(100);
+                    if (!CheckResult(result)) return;
 
                     lblActionMessage.Text = "Elaborazione bonus provvigionale in corso...";
                     result = AgentiIntegrazioni.ManualSingleElab(id, periodorif);
+                    Thread.Sleep(100);
+                    if (!CheckResult(result)) return;
 
                     lblActionMessage.Text = "Elaborazione bonus salva lavoro in corso...";
                     result = AgentiBsl.Elaborazione.ManualSingleElab(id, periodorif);
+                    Thread.Sleep(100);
+                    if (!CheckResult(result)) return;
                 }
 
                 if (e.Item.Value.EndsWith("Approved") || e.Item.Value.EndsWith("Published") || e.Item.Value.EndsWith("Close"))
                 {
                     lblActionMessage.Text = "Impostazione stato approvato in corso...";
                     result = Tabulati.SetManualApproved(id, periodorif);
+                    Thread.Sleep(100);
+                    if (!CheckResult(result)) return;
                 }
 
                 if (e.Item.Value.EndsWith("Published") || e.Item.Value.EndsWith("Close"))
                 {
                     lblActionMessage.Text = "Impostazione stato pubblicato in corso...";
                     result = Tabulati.SetManualPublished(id, periodorif);
+                    Thread.Sleep(100);
+                    if (!CheckResult(result)) return;
                 }
 
                 if (e.Item.Value.EndsWith("Close"))
                 {
                     lblActionMessage.Text = "Impostazione stato chiuso in corso...";
                     result = Tabulati.SetManualClosed(id, periodorif);
+                    Thread.Sleep(100);
+                    if (!CheckResult(result)) return;
                 }
 
-                lblActionMessage.Text = "Elaborazione terminata...";
-
+                if (e.Item.Value != "btnRefresh")
+                {
+                    lblActionMessage.Text = "Elaborazione terminata";
+                    lblMessage.Text = message.HtmlInfo("Elaborazione terminata correttamente.<br /><br />Se la griglia dei risultati non si è aggiornata clicca sul tasto refresh");
+                    tbAction.FindItemByValue("btnRefresh").Visible = true;
+                    Thread.Sleep(1000);
+                }
+                
                 search();
             }
             catch (Exception ex)
@@ -98,6 +127,19 @@ namespace corrispettivi.web.tabulati.agenti.manuale
                 else
                     lblMessage.Text = message.HtmlError(ex.Message);
             }
+            search();
+        }
+
+        
+        private bool CheckResult(Result.Default result)
+        {
+            if (result == null || result.DESC == "OK") 
+                return true;
+            else
+            {
+                lblMessage.Text = result.DESC;
+                return false;
+            }       
         }
     }
 }

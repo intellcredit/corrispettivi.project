@@ -23,6 +23,7 @@
         <AjaxSettings>
             <telerik:AjaxSetting AjaxControlID="cmbPeriodoRif">
                 <UpdatedControls>
+                    <telerik:AjaxUpdatedControl ControlID="lblMessage" />
                     <telerik:AjaxUpdatedControl ControlID="gvInfo" LoadingPanelID="apStatus" />
                     <telerik:AjaxUpdatedControl ControlID="tbAction" LoadingPanelID="apStatus" />
                 </UpdatedControls>
@@ -30,6 +31,7 @@
 
             <telerik:AjaxSetting AjaxControlID="cmbAgenteGroupID">
                 <UpdatedControls>
+                    <telerik:AjaxUpdatedControl ControlID="lblMessage" />
                     <telerik:AjaxUpdatedControl ControlID="gvInfo" LoadingPanelID="apStatus" />
                     <telerik:AjaxUpdatedControl ControlID="tbAction" LoadingPanelID="apStatus" />
                 </UpdatedControls>
@@ -43,7 +45,8 @@
 
             <telerik:AjaxSetting AjaxControlID="tbAction">
                 <UpdatedControls>
-                    <telerik:AjaxUpdatedControl ControlID="lblActionMessage" LoadingPanelID="apStatus" />
+                    <telerik:AjaxUpdatedControl ControlID="lblMessage" />
+                    <telerik:AjaxUpdatedControl ControlID="lblActionMessage" />
                     <telerik:AjaxUpdatedControl ControlID="gvInfo" LoadingPanelID="apStatus" />
                 </UpdatedControls>
             </telerik:AjaxSetting>
@@ -70,8 +73,9 @@
         <tr><td colspan="4" id="sep1" runat="server"><hr /></td></tr>
         <tr>
             <td colspan="3"><asp:Label ID="lblActionMessage" runat="server" Text="" CssClass="titrosso12" /></td>
-            <td colspan="2" align="right"><telerik:radtoolbar ID="tbAction" runat="server" Skin="Simple" onbuttonclick="tbAction_ButtonClick">
+            <td colspan="1" align="right"><telerik:radtoolbar ID="tbAction" runat="server" Skin="Simple" onbuttonclick="tbAction_ButtonClick">
                 <Items>
+                    <telerik:RadToolBarButton Text="Refresh" Value="btnRefresh" CommandName="RefreshSelected" ImageUrl="~/image/Sync.png" />    
                     <telerik:RadToolBarDropDown Text="Rielaborazione" ToolTip="Scegli con quale status impostare i tabulati" ImageUrl="~/image/tab/elab_24x24.png" DropDownWidth="300px">
                         <Buttons>
                             <telerik:RadToolBarButton Text="Rielabora ed imposta stato provvisorio" Value="btnReWorksProvisional" CommandName="ReWorksProvisionalSelected" />
@@ -79,8 +83,7 @@
                             <telerik:RadToolBarButton Text="Rielabora ed imposta stato pubblicato" Value="btnReWorksPublished" CommandName="ReWorksPublishedSelected" />
                         </Buttons>
                     </telerik:RadToolBarDropDown>
-
-                    <telerik:RadToolBarDropDown Text="Chiusura" ToolTip="Scegli in che modo chiudere i tabulati" ImageUrl="~/image/tab/close_24x24.png" DropDownWidth="200px">
+                    <telerik:RadToolBarDropDown Text="Chiusura" ToolTip="Scegli in che modo chiudere i tabulati" ImageUrl="~/image/tab/close_24x24.png" DropDownWidth="250px">
                         <Buttons>
                             <telerik:RadToolBarButton Text="Rielabora e chiudi" Value="btnReWorksClose" CommandName="ReWorksCloseSelected" />
                             <telerik:RadToolBarButton Text="Chiudi senza rielaborare" Value="btnClose" CommandName="CloseSelected" />
