@@ -23,7 +23,7 @@
         <AjaxSettings>
             <telerik:AjaxSetting AjaxControlID="cmbPeriodoRif">
                 <UpdatedControls>
-                    <telerik:AjaxUpdatedControl ControlID="lblMessage" />
+                    <telerik:AjaxUpdatedControl ControlID="lblMessage" LoadingPanelID="apStatus" />
                     <telerik:AjaxUpdatedControl ControlID="gvInfo" LoadingPanelID="apStatus" />
                     <telerik:AjaxUpdatedControl ControlID="tbAction" LoadingPanelID="apStatus" />
                 </UpdatedControls>
@@ -31,7 +31,7 @@
 
             <telerik:AjaxSetting AjaxControlID="cmbAgenteGroupID">
                 <UpdatedControls>
-                    <telerik:AjaxUpdatedControl ControlID="lblMessage" />
+                    <telerik:AjaxUpdatedControl ControlID="lblMessage" LoadingPanelID="apStatus" />
                     <telerik:AjaxUpdatedControl ControlID="gvInfo" LoadingPanelID="apStatus" />
                     <telerik:AjaxUpdatedControl ControlID="tbAction" LoadingPanelID="apStatus" />
                 </UpdatedControls>
@@ -45,14 +45,15 @@
 
             <telerik:AjaxSetting AjaxControlID="tbAction">
                 <UpdatedControls>
-                    <telerik:AjaxUpdatedControl ControlID="lblMessage" />
-                    <telerik:AjaxUpdatedControl ControlID="lblActionMessage" />
+                    <telerik:AjaxUpdatedControl ControlID="lblMessage" LoadingPanelID="apStatus" />
+                    <telerik:AjaxUpdatedControl ControlID="lblActionMessage" LoadingPanelID="apStatus" />
+                    <telerik:AjaxUpdatedControl ControlID="tbAction" LoadingPanelID="apStatus" />
                     <telerik:AjaxUpdatedControl ControlID="gvInfo" LoadingPanelID="apStatus" />
                 </UpdatedControls>
             </telerik:AjaxSetting>
         </AjaxSettings>
     </telerik:RadAjaxManager>
-    <telerik:RadAjaxLoadingPanel ID="apStatus" runat="server" Style="width: 320px;" Height="75px" Width="75px" AnimationDuration="1">
+    <telerik:RadAjaxLoadingPanel ID="apStatus" runat="server" Style="width: 320px;" Height="75px" Width="75px" AnimationDuration="1000" InitialDelayTime="1000">
         <img alt="Loading..." src="../../../image/Telerik/loading7.gif" style="border:0;" />
     </telerik:RadAjaxLoadingPanel>
 

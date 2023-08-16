@@ -58,6 +58,8 @@ namespace corrispettivi.web.tabulati.agenti.manuale
                 int id = Convert.ToInt32(cmbAgenteGroupID.SelectedValue);
                 string periodorif = cmbPeriodoRif.SelectedValue;
 
+                tbAction.FindItemByValue("btnRefresh").Visible = true;
+
                 if (e.Item.Value.StartsWith("btnReWorks"))
                 {
                     lblActionMessage.Text = "Elaborazione bonus contatti in corso...";
@@ -114,8 +116,7 @@ namespace corrispettivi.web.tabulati.agenti.manuale
                 {
                     lblActionMessage.Text = "Elaborazione terminata";
                     lblMessage.Text = message.HtmlInfo("Elaborazione terminata correttamente.<br /><br />Se la griglia dei risultati non si è aggiornata clicca sul tasto refresh");
-                    tbAction.FindItemByValue("btnRefresh").Visible = true;
-                    Thread.Sleep(1000);
+                    Thread.Sleep(100);
                 }
                 
                 search();

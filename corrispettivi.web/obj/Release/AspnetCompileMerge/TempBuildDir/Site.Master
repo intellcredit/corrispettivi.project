@@ -154,7 +154,7 @@
             <div>  <b>Server name:</b> <%=HttpContext.Current.Server.MachineName %> | <b>Server IP:</b> <%=HttpContext.Current.Request.ServerVariables["LOCAL_ADDR"] %></div>
             <strong>Copyright &copy; <a href="http://www.intellcredit.it">Intellcredit S.p.A.</a></strong>
             <span class="align:center"><b>Best view:</b> 1280x768 pixel</span>
-            <%--Verisione: <asp:Label ID="lblVersion" runat="server" Text="" />--%>
+            <strong>Verisione:</strong> 2.0.2
         </div>
     </form>
 </body>

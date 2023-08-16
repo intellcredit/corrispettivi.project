@@ -29,9 +29,15 @@ namespace corrispettivi.console.sendreport
                               : ConfigurationManager.AppSettings["ExportDirectory"]
                               ) + @"\attach\";
 
+                emul.Utility.Logger.Log(string.Format("DirExport:", dirExport));
                 if (!Directory.Exists(dirExport))
                 {
                     Directory.CreateDirectory(dirExport);
+                    emul.Utility.Logger.Log("created");
+                }
+                else
+                {
+                    emul.Utility.Logger.Log("exists");
                 }
 
 

@@ -1,0 +1,16 @@
+C:\DEV.NET2019\Corrispettivi.Project\DEVELOPER\corrispettivi.console.sendreport\bin\Debug\corrispettivi.console.sendreport.exe.config
+C:\DEV.NET2019\Corrispettivi.Project\DEVELOPER\corrispettivi.console.sendreport\bin\Debug\corrispettivi.console.sendreport.exe
+C:\DEV.NET2019\Corrispettivi.Project\DEVELOPER\corrispettivi.console.sendreport\bin\Debug\corrispettivi.console.sendreport.pdb
+C:\DEV.NET2019\Corrispettivi.Project\DEVELOPER\corrispettivi.console.sendreport\bin\Debug\System.Configuration.ConfigurationManager.dll
+C:\DEV.NET2019\Corrispettivi.Project\DEVELOPER\corrispettivi.console.sendreport\bin\Debug\System.Security.AccessControl.dll
+C:\DEV.NET2019\Corrispettivi.Project\DEVELOPER\corrispettivi.console.sendreport\bin\Debug\System.Security.Permissions.dll
+C:\DEV.NET2019\Corrispettivi.Project\DEVELOPER\corrispettivi.console.sendreport\bin\Debug\System.Security.Principal.Windows.dll
+C:\DEV.NET2019\Corrispettivi.Project\DEVELOPER\corrispettivi.console.sendreport\bin\Debug\System.Configuration.ConfigurationManager.xml
+C:\DEV.NET2019\Corrispettivi.Project\DEVELOPER\corrispettivi.console.sendreport\bin\Debug\System.Security.AccessControl.xml
+C:\DEV.NET2019\Corrispettivi.Project\DEVELOPER\corrispettivi.console.sendreport\bin\Debug\System.Security.Permissions.xml
+C:\DEV.NET2019\Corrispettivi.Project\DEVELOPER\corrispettivi.console.sendreport\bin\Debug\System.Security.Principal.Windows.xml
+C:\DEV.NET2019\Corrispettivi.Project\DEVELOPER\corrispettivi.console.sendreport\obj\Debug\corrispettivi.console.sendreport.csprojAssemblyReference.cache
+C:\DEV.NET2019\Corrispettivi.Project\DEVELOPER\corrispettivi.console.sendreport\obj\Debug\corrispettivi.console.sendreport.csproj.CoreCompileInputs.cache
+C:\DEV.NET2019\Corrispettivi.Project\DEVELOPER\corrispettivi.console.sendreport\obj\Debug\corrispettivi.console.sendreport.csproj.CopyComplete
+C:\DEV.NET2019\Corrispettivi.Project\DEVELOPER\corrispettivi.console.sendreport\obj\Debug\corrispettivi.console.sendreport.exe
+C:\DEV.NET2019\Corrispettivi.Project\DEVELOPER\corrispettivi.console.sendreport\obj\Debug\corrispettivi.console.sendreport.pdb

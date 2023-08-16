@@ -125,7 +125,7 @@
                         </telerik:RadScriptBlock>
                     </FilterTemplate>
                 </telerik:GridBoundColumn>
-                <telerik:GridBoundColumn DataField="DebitoreNome" HeaderText="Debitore" HeaderStyle-Width="100px" HeaderStyle-HorizontalAlign="Center" FooterText=" " FooterStyle-HorizontalAlign="Center" AllowFiltering="false" />
+                <%--<telerik:GridBoundColumn DataField="DebitoreNome" HeaderText="Debitore" HeaderStyle-Width="100px" HeaderStyle-HorizontalAlign="Center" FooterText=" " FooterStyle-HorizontalAlign="Center" AllowFiltering="false" />--%>
                 <telerik:GridBoundColumn DataField="NumPag" HeaderText="Num.<br />pag." HeaderStyle-Width="50px" HeaderStyle-HorizontalAlign="Center" ItemStyle-HorizontalAlign="Center" FooterText=" " Aggregate="Sum" FooterStyle-HorizontalAlign="Center" AllowFiltering="false" />
                 <telerik:GridBoundColumn DataField="NumServ" HeaderText="Num.<br />serv." HeaderStyle-Width="50px" HeaderStyle-HorizontalAlign="Center" ItemStyle-HorizontalAlign="Center" FooterText=" " Aggregate="Sum" FooterStyle-HorizontalAlign="Center" AllowFiltering="false" />
                 <telerik:GridBoundColumn DataField="Imponibile" HeaderText="Imponibile" HeaderStyle-Width="80px" HeaderStyle-HorizontalAlign="Center" ItemStyle-HorizontalAlign="Right" DataFormatString="{0:C}" Aggregate="Sum" FooterStyle-HorizontalAlign="Right" AllowFiltering="false" />

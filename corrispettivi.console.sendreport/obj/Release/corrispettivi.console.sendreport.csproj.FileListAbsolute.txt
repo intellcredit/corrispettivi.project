@@ -1,0 +1,16 @@
+C:\DEV.NET2019\Corrispettivi.Project\DEVELOPER\corrispettivi.console.sendreport\obj\Release\corrispettivi.console.sendreport.csprojAssemblyReference.cache
+C:\DEV.NET2019\Corrispettivi.Project\DEVELOPER\corrispettivi.console.sendreport\obj\Release\corrispettivi.console.sendreport.csproj.CoreCompileInputs.cache
+C:\DEV.NET2019\Corrispettivi.Project\DEVELOPER\corrispettivi.console.sendreport\bin\Release\corrispettivi.console.sendreport.exe.config
+C:\DEV.NET2019\Corrispettivi.Project\DEVELOPER\corrispettivi.console.sendreport\bin\Release\corrispettivi.console.sendreport.exe
+C:\DEV.NET2019\Corrispettivi.Project\DEVELOPER\corrispettivi.console.sendreport\bin\Release\corrispettivi.console.sendreport.pdb
+C:\DEV.NET2019\Corrispettivi.Project\DEVELOPER\corrispettivi.console.sendreport\bin\Release\System.Configuration.ConfigurationManager.dll
+C:\DEV.NET2019\Corrispettivi.Project\DEVELOPER\corrispettivi.console.sendreport\bin\Release\System.Security.AccessControl.dll
+C:\DEV.NET2019\Corrispettivi.Project\DEVELOPER\corrispettivi.console.sendreport\bin\Release\System.Security.Permissions.dll
+C:\DEV.NET2019\Corrispettivi.Project\DEVELOPER\corrispettivi.console.sendreport\bin\Release\System.Security.Principal.Windows.dll
+C:\DEV.NET2019\Corrispettivi.Project\DEVELOPER\corrispettivi.console.sendreport\bin\Release\System.Configuration.ConfigurationManager.xml
+C:\DEV.NET2019\Corrispettivi.Project\DEVELOPER\corrispettivi.console.sendreport\bin\Release\System.Security.AccessControl.xml
+C:\DEV.NET2019\Corrispettivi.Project\DEVELOPER\corrispettivi.console.sendreport\bin\Release\System.Security.Permissions.xml
+C:\DEV.NET2019\Corrispettivi.Project\DEVELOPER\corrispettivi.console.sendreport\bin\Release\System.Security.Principal.Windows.xml
+C:\DEV.NET2019\Corrispettivi.Project\DEVELOPER\corrispettivi.console.sendreport\obj\Release\corrispettivi.console.sendreport.csproj.CopyComplete
+C:\DEV.NET2019\Corrispettivi.Project\DEVELOPER\corrispettivi.console.sendreport\obj\Release\corrispettivi.console.sendreport.exe
+C:\DEV.NET2019\Corrispettivi.Project\DEVELOPER\corrispettivi.console.sendreport\obj\Release\corrispettivi.console.sendreport.pdb

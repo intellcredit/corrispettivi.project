@@ -107,7 +107,7 @@
                         <telerik:GridBoundColumn HeaderText="Committente" DataField="CommittenteNome" HeaderStyle-HorizontalAlign="Center" HeaderStyle-Width="200px" />
                         <telerik:GridBoundColumn HeaderText="Pratica" DataField="PraticaAlias" HeaderStyle-Width="100px" HeaderStyle-HorizontalAlign="Center" ItemStyle-HorizontalAlign="Center" Aggregate="Count" FooterStyle-HorizontalAlign="Right" />
                         <telerik:GridBoundColumn HeaderText="Contratto" DataField="Contratto" HeaderStyle-Width="100px" HeaderStyle-HorizontalAlign="Center" ItemStyle-HorizontalAlign="Center" />
-                        <telerik:GridBoundColumn DataField="DebitoreNome" HeaderText="Debitore" HeaderStyle-Width="100px" HeaderStyle-HorizontalAlign="Center" />
+                        <%--<telerik:GridBoundColumn DataField="DebitoreNome" HeaderText="Debitore" HeaderStyle-Width="100px" HeaderStyle-HorizontalAlign="Center" />--%>
                         <telerik:GridBoundColumn HeaderText="Affidamento" DataField="DataQuestura" HeaderStyle-Width="60px" HeaderStyle-HorizontalAlign="Center" ItemStyle-HorizontalAlign="Center" DataFormatString="{0:d}" ColumnGroupName="DATA" />
                         <telerik:GridBoundColumn HeaderText="Scadenza" DataField="DataScadenza" HeaderStyle-Width="60px" HeaderStyle-HorizontalAlign="Center" ItemStyle-HorizontalAlign="Center" DataFormatString="{0:d}" ColumnGroupName="DATA" />
                         <telerik:GridBoundColumn DataField="ImpAff" HeaderText="Affidato" HeaderStyle-Width="80px" HeaderStyle-HorizontalAlign="Center" ItemStyle-HorizontalAlign="Right" DataFormatString="{0:C}" Aggregate="Sum" FooterStyle-HorizontalAlign="Right" ColumnGroupName="IMP" />
